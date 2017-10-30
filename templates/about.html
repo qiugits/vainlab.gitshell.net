@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <main class="inner cover" role="main">
+        <h3>About</h3>
+        <p>
+          Creator: Qiu;
+        </p>
+        <p>
+          My interest: Machine Learning; Deep Learning; Artificial General Intelligence;<br>
+          Hobby: Anime; Manga; Movie;
+        </p>
+        <p>/ 
+          {% if accounts %}
+            {% for name, url in accounts %}
+              <a href={{ url }} target="_blank">{{ name }}</a> /
+            {% endfor %}
+          {% endif %}
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+{% endblock %}
