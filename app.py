@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, send_file
 from mymetrics.sbi_trade_history import rearrange_trade_data
+from mymetrics.analytics import track_event
 import pandas as pd
 from io import BytesIO
 
@@ -9,6 +10,9 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/about')
 def about():
+    """ about """
+    track_event('about', 'get')
+
     accounts = [
         ('Qiita', 'https://qiita.com/qiugits'),
         ('Github', 'https://github.com/qiugits'),
@@ -19,6 +23,8 @@ def about():
 @app.route('/sbi', methods=['GET', 'POST'])
 def sbi():
     """ analyze sbi history """
+    track_event('sbi', 'post/get')
+
     if request.method == 'GET':
         return render_template('sbi.html')
     else:  # == 'POST'
