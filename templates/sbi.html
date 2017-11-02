@@ -6,14 +6,14 @@
       <main class="inner cover" role="main">
         <h3>SBI History Analyzer</h3>
         <p>使い方<br>
-        <a href="http://sbisec.co.jp">SBI証券Webページ</a>から
+        <a href="https://www.sbisec.co.jp/">SBI証券Webページ</a>から
         ログイン→先物・オプション取引→履歴→約定履歴→検索→CSVダウンロード<br>
         ダウンロードされたファイルをそのまま選択→ボタンをクリックすると
         整形されたファイルとしてダウンロードできます
         </p>
         <form action="/sbi" method="POST" enctype="multipart/form-data" class="form-inline">
           <input type="file" name="file"><br>
-          <button type="submit" class="btn btn-default">Up-DownLoad</button>
+          <button type="submit" class="btn btn-default">データ整形</button>
         </form>
       </main>
     </div>
