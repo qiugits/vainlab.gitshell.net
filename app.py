@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request, send_file
-from mymetrics.sbi_trade_history import rearrange_trade_data, evaluate_risk_reward
+from mymetrics.sbi_trade_history import (
+    rearrange_trade_data, evaluate_risk_reward
+)
 from mymetrics.analytics import track_event
 import pandas as pd
 from io import BytesIO
+
 
 app = Flask(__name__)
 
@@ -47,7 +50,6 @@ def sbi_calc_rr():
         res = rearrange_trade_data(df)
         rr = evaluate_risk_reward(res)
         return render_template('sbi.html', risk_reward=rr)
-
 
 
 if __name__ == '__main__':
