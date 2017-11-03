@@ -11,9 +11,15 @@
         ダウンロードされたファイルをそのまま選択→ボタンをクリックすると
         整形されたファイルとしてダウンロードできます
         </p>
-        <form action="/sbi" method="POST" enctype="multipart/form-data" class="form-inline">
-          <input type="file" name="file"><br>
-          <button type="submit" class="btn btn-default">データ整形</button>
+        <form action="/sbi_button" method="POST" enctype="multipart/form-data" class="form-inline">
+          <input type="file" name="file">
+          {% if buttons %}
+            {% for val, lab in buttons %}
+              <button type="submit" class="btn btn-default" name="action" value={{ val }}>
+                {{ lab }}
+              </button>
+            {% endfor %}
+          {% endif %}
         </form>
       </main>
     </div>

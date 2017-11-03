@@ -23,33 +23,43 @@ def about():
     return render_template('about.html', accounts=accounts)
 
 
-@app.route('/sbi', methods=['GET', 'POST'])
+@app.route('/sbi')
 def sbi():
     """ analyze sbi history """
-    track_event('sbi', 'post/get')
+    track_event('sbi', 'get')
 
-    if request.method == 'GET':
-        return render_template('sbi.html')
-    else:  # == 'POST'
-        ifile = request.files['file']
-        df = pd.read_csv(ifile, encoding='Shift-JIS', skiprows=5)
-        res = rearrange_trade_data(df)
-        ofile = res.to_csv().encode('utf-8')
-        return send_file(BytesIO(ofile), attachment_filename='outfile.csv',
-                         as_attachment=True)
+    buttons = [
+        # ('plt', 'グラフ'),
+        ('rr', 'RR分析'),
+        ('rearrange', 'データ整形'),
+    ]
+    return render_template('sbi.html', buttons=buttons)
 
 
-@app.route('/sbi_calc_rr', methods=['POST'])
-def sbi_calc_rr():
+@app.route('/sbi_button', methods=['POST'])
+def sbi_button():
     """ calculate sbi risk riward """
-    track_event('sbi', 'post-rr')
+    # import pdb;  pdb.set_trace()
 
-    if request.method == 'POST':
-        ifile = request.files['file']
-        df = pd.read_csv(ifile, encoding='Shift-JIS', skiprows=5)
-        res = rearrange_trade_data(df)
+    ifile = request.files['file']
+    df = pd.read_csv(ifile, encoding='Shift-JIS', skiprows=5)
+    res = rearrange_trade_data(df)
+
+    if request.form['action'] == 'plt':
+        track_event('sbi', 'plt')
+        return 'plot graph(in test stage)'
+    elif request.form['action'] == 'rr':
+        track_event('sbi', 'rr')
         rr = evaluate_risk_reward(res)
-        return render_template('sbi.html', risk_reward=rr)
+        ofile = pd.DataFrame(rr).to_csv().encode('utf-8')
+        return send_file(BytesIO(ofile),
+                         attachment_filename='RiskReward.csv',
+                         as_attachment=True)
+    elif request.form['action'] == 'rearrange':
+        track_event('sbi', 'rearrange')
+        ofile = res.to_csv().encode('utf-8')
+        return send_file(BytesIO(ofile), attachment_filename='SBIhistory.csv',
+                         as_attachment=True)
 
 
 if __name__ == '__main__':

@@ -2,7 +2,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import glob
 
 
 def rearrange_trade_data(df):
@@ -48,22 +47,22 @@ def evaluate_risk_reward(chart_result):
     num_lose = len(_lose)
     win_rate = num_win / (num_win + num_lose)
     risk_reward = ave_win / abs(ave_lose)
-    return (ave_win, ave_lose, num_win, num_lose, win_rate, risk_reward)
+    rr = [
+        ('ave_win', ave_win),
+        ('ave_lose', ave_lose),
+        ('num_win', num_win),
+        ('num_lose', num_lose),
+        ('win_rate', win_rate),
+        ('risk_reward', risk_reward)
+    ]
+    return rr
 
 
-# if __name__ == '__main__':
-#     _fname = sorted(glob.glob('/Users/qiushi/Downloads/ExecutionRefer[0-9]*.csv'))[-1]
-#     print(f'reading filename {_fname}')
-#     df = pd.read_csv(_fname, encoding='Shift-JIS', skiprows=5)
-# 
-#     res = rearrange_trade_data(df)
-#     res.to_csv('/Users/qiushi/Desktop/rearranged.csv')
-# 
-#     cs_res = np.cumsum(res[['result']].values.T)
-#     cs_pro = np.cumsum(res[['profit/loss']].values.T) / 100
-#     print(max(cs_res) - min(cs_res))
-#     plt.plot(cs_res)
-#     plt.plot(cs_pro)
-#     plt.savefig('/Users/qiushi/Desktop/fig.png')
-#     plt.show()
-
+def plot_profit_history(df):
+    res = rearrange_trade_data(df)
+    cs_res = np.cumsum(res[['result']].values.T)
+    cs_pro = np.cumsum(res[['profit/loss']].values.T) / 100
+    print(max(cs_res) - min(cs_res))
+    plt.plot(cs_res)
+    plt.plot(cs_pro)
+    return plt
