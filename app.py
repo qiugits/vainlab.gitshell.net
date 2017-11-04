@@ -15,25 +15,31 @@ app = Flask(__name__)
 def about():
     """ about """
     track_event('about', 'get')
+    meta = {
+        'title': 'About',
+    }
 
     accounts = [
         ('Qiita', 'https://qiita.com/qiugits'),
         ('Github', 'https://github.com/qiugits'),
     ]
-    return render_template('about.html', accounts=accounts)
+    return render_template('about.html', meta=meta, accounts=accounts)
 
 
 @app.route('/sbi')
 def sbi():
     """ analyze sbi history """
     track_event('sbi', 'get')
+    meta = {
+        'title': 'SBI',
+    }
 
     buttons = [
         # ('plt', 'グラフ'),
         ('rr', 'RR分析'),
         ('rearrange', 'データ整形'),
     ]
-    return render_template('sbi.html', buttons=buttons)
+    return render_template('sbi.html', meta=meta, buttons=buttons)
 
 
 @app.route('/sbi_button', methods=['POST'])
