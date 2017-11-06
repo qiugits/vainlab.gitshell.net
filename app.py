@@ -35,9 +35,9 @@ def sbi():
     }
 
     buttons = [
-        # ('plt', 'グラフ'),
-        ('rr', 'RR分析'),
-        ('rearrange', 'データ整形'),
+        # ('plt', 'グラフ', 'グラフをダウンロード'),
+        ('rr', 'RR分析', 'リスク・リワード分析の結果をダウンロード'),
+        ('rearrange', 'データ整形', '整形されたデータをダウンロード'),
     ]
     return render_template('sbi.html', meta=meta, buttons=buttons)
 

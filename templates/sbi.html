@@ -4,25 +4,63 @@
   <div class="site-wrapper-inner">
     <div class="cover-container">
       <main class="inner cover" role="main">
-        <h3>SBI History Analyzer</h3>
-        <p>使い方<br>
-        <a href="https://www.sbisec.co.jp/" target="_blank">SBI証券Webページ</a>から
-        ログイン→先物・オプション取引→履歴→約定履歴→検索→CSVダウンロード<br>
-        ダウンロードされたファイル（ExecutionRefer20XXxxxxXXXXXX.csv）をそのまま選択→ボタンをクリックすると
-        整形されたファイル、またはリスクリワード分析結果をダウンロードできます
-        </p>
+            <h1>SBI History Analyzer</h1>
+            <p class="lead"><br>
+            SBI証券からダウンロードできる取引履歴を<br>
+            データ分析しやすいフォーマットに整形するツール</p>
+        <a data-toggle="collapse" href="#usage" aria-expanded="true" aria-controls="#usage">
+            <i class="fa fa-question-circle"></i>
+            使い方
+        </a><br>
+        </button>
+        <div id="usage" class="collapse">
+            <div class="card card-inverse" style="background-color: #444;">
+                <p>
+                step1. 
+                <a href="https://www.sbisec.co.jp/" target="_blank">SBI証券Webページ
+                    <small><i class="fa fa-external-link"></i></small>
+                </a>から
+                ログイン→
+                </p>
+                <p>
+                step2. 
+                先物・オプション取引→
+                </p>
+                <p>
+                step3. 
+                履歴→約定履歴→検索→CSVダウンロード<br>
+                ダウンロードされたファイル（ExecutionRefer20XXxxxxXXXXXX.csv）
+                をそのまま選択→
+                「RR分析」または「データ整形」のボタンをクリック
+                </p>
+                <img src="/static/img/step3.png" class="card-img-bottom">
+            </div>
+        </div>
+        <br>
         <form action="/sbi_button" method="POST" enctype="multipart/form-data">
             <input type="file" name="file" class="form-control" accept="text/csv"><br>
           {% if buttons %}
-            {% for val, lab in buttons %}
-              <button type="submit" class="btn btn-default" name="action" value="{{ val }}">
-                {{ lab }}
-              </button>
+            {% for val, label, descr in buttons %}
+            <button type="submit" class="btn btn-default" name="action" value="{{ val }}" title="{{ descr }}">
+                {{ label }}
+            </button>
             {% endfor %}
           {% endif %}
+          <!--
+          <br>
+          <small>
+                  <i class="fa fa-info-circle"></i>データの管理について
+          </small>
+          -->
         </form>
       </main>
     </div>
   </div>
 </div>
+<!--
+    <script>
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+    </script>
+-->
 {% endblock %}
