@@ -3,6 +3,7 @@ from mymetrics.sbi_trade_history import (
     rearrange_trade_data, evaluate_risk_reward
 )
 from mymetrics.analytics import track_event
+from mymetrics.environment import if_is_development
 import pandas as pd
 from io import BytesIO
 
@@ -69,4 +70,4 @@ def sbi_button():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=if_is_development())
