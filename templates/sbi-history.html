@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block minorstylesheet %}
+  <link
+  href="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.css"
+  rel="stylesheet" type="text/css">
+  <link
+  href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.css"
+  rel="stylesheet" type="text/css">
+  <link
+  href="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.css"
+  rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+{% block content %}
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <main class="inner cover" role="main">
+  
+  {{ bk_div | safe }}
+  {{ bk_script | safe }}
+
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.js"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.js"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.js"></script>
+
+      </main>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
