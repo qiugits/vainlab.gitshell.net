@@ -46,7 +46,7 @@ def sbi_button():
     if request.form['action'] == 'exec':
         track_event('sbi', 'plt')
         bk_script, bk_div, bk_v = sbi.bokeh_plot_history()
-        rr = pd.DataFrame(sbi.evaluate_risk_reward()).T
+        rr = pd.DataFrame(sbi.evaluate_risk_reward(ja=True)).T
         rr_table = rr.to_html(classes="table", header=False, index=False)
         return render_template('sbi-history.html',
                                rr_table=rr_table,

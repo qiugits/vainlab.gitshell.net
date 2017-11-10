@@ -60,7 +60,7 @@ class SbiAnalyzer:
         # print(*tmp[:5], sep='\n')
         return pd.DataFrame(tmp, columns=_columns)
 
-    def evaluate_risk_reward(self):
+    def evaluate_risk_reward(self, ja=False):
         cr = self.df[['result']].values
         _win = list(filter(lambda x: x > 0, cr))
         _lose = list(filter(lambda x: x < 0, cr))
@@ -70,14 +70,24 @@ class SbiAnalyzer:
         num_lose = len(_lose)
         win_rate = num_win / (num_win + num_lose)
         risk_reward = ave_win / abs(ave_lose)
-        rr = [
-            ('ave_win', ave_win),
-            ('ave_lose', ave_lose),
-            ('num_win', num_win),
-            ('num_lose', num_lose),
-            ('win_rate', win_rate),
-            ('risk_reward', risk_reward)
-        ]
+        if ja:
+            rr = [
+                ('平均利益', round(ave_win, 2)),
+                ('平均損失', round(ave_lose, 2)),
+                ('勝ち数', num_win),
+                ('負け数', num_lose),
+                ('勝率', f'{ round(win_rate * 100, 2)}%'),
+                ('リスク・リワード', round(risk_reward, 4))
+            ]
+        else:
+            rr = [
+                ('ave_win', ave_win),
+                ('ave_lose', ave_lose),
+                ('num_win', num_win),
+                ('num_lose', num_lose),
+                ('win_rate', win_rate),
+                ('risk_reward', risk_reward)
+            ]
         return rr
 
     def plot_profit_history(self):
@@ -96,7 +106,8 @@ class SbiAnalyzer:
         # print(max(cs_res) - min(cs_res))
         x = np.arange(len(cs_pro))
         p = figure()
-        p.line(x, cs_res, line_dash='dotted', line_color='orange', line_width=1.5)
+        p.line(x, cs_res, line_width=1.5,
+               line_dash='dotted', line_color='orange')
         p.line(x, cs_pro, line_width=2)
         script, div = components(p)
         return script, div, _bokeh_version
