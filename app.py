@@ -30,8 +30,7 @@ def sbi():
     track_event('sbi', 'get')
 
     buttons = [
-        ('plt', 'グラフ', 'グラフを描画'),
-        ('rr', 'RR分析', 'リスク・リワード分析の結果をダウンロード'),
+        ('exec', '実行', 'RR分析＆グラフ描画'),
         ('rearrange', 'データ整形', '整形されたデータをダウンロード'),
     ]
     return render_template('sbi.html', buttons=buttons)
@@ -44,23 +43,26 @@ def sbi_button():
     ifile = request.files['file']
     sbi = SbiAnalyzer(ifile)
 
-    if request.form['action'] == 'plt':
+    if request.form['action'] == 'exec':
         track_event('sbi', 'plt')
         bk_script, bk_div, bk_v = sbi.bokeh_plot_history()
+        rr = pd.DataFrame(sbi.evaluate_risk_reward()).T
+        rr_table = rr.to_html(classes="table", header=False, index=False)
         return render_template('sbi-history.html',
+                               rr_table=rr_table,
                                bk_script=bk_script, bk_div=bk_div, bk_v=bk_v)
-    elif request.form['action'] == 'rr':
-        track_event('sbi', 'rr')
-        rr = sbi.evaluate_risk_reward()
-        ofile = pd.DataFrame(rr).to_csv().encode('utf-8')
-        return send_file(BytesIO(ofile),
-                         attachment_filename='RiskReward.csv',
-                         as_attachment=True)
     elif request.form['action'] == 'rearrange':
         track_event('sbi', 'rearrange')
         ofile = sbi.df.to_csv().encode('utf-8')
         return send_file(BytesIO(ofile), attachment_filename='SBIhistory.csv',
                          as_attachment=True)
+    # elif request.form['action'] == 'rr':
+    #     track_event('sbi', 'rr')
+    #     rr = sbi.evaluate_risk_reward()
+    #     ofile = pd.DataFrame(rr).to_csv().encode('utf-8')
+    #     return send_file(BytesIO(ofile),
+    #                      attachment_filename='RiskReward.csv',
+    #                      as_attachment=True)
 
 
 if __name__ == '__main__':
