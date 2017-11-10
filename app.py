@@ -30,7 +30,7 @@ def sbi():
     track_event('sbi', 'get')
 
     buttons = [
-        ('exec', '実行', 'RR分析＆グラフ描画'),
+        ('exec', '分析実行', 'RR分析＆グラフ描画'),
         ('rearrange', 'データ整形', '整形されたデータをダウンロード'),
     ]
     return render_template('sbi.html', buttons=buttons)
