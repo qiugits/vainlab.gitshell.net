@@ -56,13 +56,6 @@ def sbi_button():
         ofile = sbi.df.to_csv().encode('utf-8')
         return send_file(BytesIO(ofile), attachment_filename='SBIhistory.csv',
                          as_attachment=True)
-    # elif request.form['action'] == 'rr':
-    #     track_event('sbi', 'rr')
-    #     rr = sbi.evaluate_risk_reward()
-    #     ofile = pd.DataFrame(rr).to_csv().encode('utf-8')
-    #     return send_file(BytesIO(ofile),
-    #                      attachment_filename='RiskReward.csv',
-    #                      as_attachment=True)
 
 
 if __name__ == '__main__':
