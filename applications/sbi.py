@@ -19,7 +19,7 @@ def sbi():
         ('exec', '分析実行', 'RR分析＆グラフ描画'),
         ('rearrange', 'データ整形', '整形されたデータをダウンロード'),
     ]
-    return render_template('sbi.html', buttons=buttons)
+    return render_template('sbi/index.html', buttons=buttons)
 
 
 @mod.route('/sbi_button', methods=['POST'])
@@ -34,7 +34,7 @@ def sbi_button():
         bk_script, bk_div, bk_v = sbi.bokeh_plot_history()
         rr = pd.DataFrame(sbi.evaluate_risk_reward(ja=True)).T
         rr_table = rr.to_html(classes="table", header=False, index=False)
-        return render_template('sbi-history.html',
+        return render_template('sbi/result.html',
                                rr_table=rr_table,
                                bk_script=bk_script, bk_div=bk_div, bk_v=bk_v)
     elif request.form['action'] == 'rearrange':
