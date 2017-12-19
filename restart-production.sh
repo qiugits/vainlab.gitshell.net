@@ -1,5 +1,5 @@
 git pull &
 
-uwsgi --ini uwsgi.ini &
+nohup uwsgi --ini uwsgi.ini &
 
 nginx -s reload
