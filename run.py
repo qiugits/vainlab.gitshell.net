@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, send_file  # noqa
-from applications import sbi, vain
+from applications import sbi, vain, beta
 from mymetrics.analytics import track_event
 from mymetrics.environment import if_is_development
 # デバッグをしたい場合
@@ -7,7 +7,7 @@ from mymetrics.environment import if_is_development
 
 
 app = Flask(__name__)
-for m in [sbi.mod, vain.mod, ]:
+for m in [sbi.mod, vain.mod, beta.mod, ]:
     app.register_blueprint(m)
 
 
