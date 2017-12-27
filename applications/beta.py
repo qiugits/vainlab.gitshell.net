@@ -4,6 +4,14 @@ from flask_mail import Mail, Message
 mod = Blueprint('beta', __name__, url_prefix='/beta')
 mail = Mail(mod)
 
+mod.config.update(
+    MAIL_SERVER='gitshell.net',
+    MAIL_PORT=2500,
+    # MAIL_USE_TLS=True,
+    MAIL_USERNAME='qiu',
+    MAIL_PASSWORD='nn',
+)
+
 
 @mod.route('/')
 def index():
