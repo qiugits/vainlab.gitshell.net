@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block titlename %}
+<title>Vain matches</title>
+{% endblock %}
+
+{% block content %}
+
+<p>
+  <form class="" action="{{ url_for('vain.matches') }}" method="post">
+    <input name="ign" type="text" />
+    <select name="reg">
+      <option value="ea">東アジア</option>
+      <option value="cn">中国</option>
+      <option value="na">北アメリカ</option>
+      <option value="eu">ヨーロッパ</option>
+      <option value="sa">南アメリカ</option>
+      <option value="sg">東南アジア</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</p>
+
+{% if matches.errors %}
+  {{ matches }}
+{% else %}
+
+<!-- Matches data -->
+{{ player_id }}
+
+{% for m in matches %}
+<section>
+  <h3>
+  {{ m.mode }}
+  {{ m.duration }}
+  </h3>
+  
+  {% for r in m.rosters %}
+    {% for p in r.participants %}
+      {% if p.player_id == player_id %}
+      <div class="played">
+        <i class="hero hero-{{ p.actor.replace('*', '') }}_Portrait">{{ p.actor.replace('*', '') }}</i>
+        {{ p.gold }}
+        {{ p.farm }}
+        <!-- KDA http://vainglory.pchw.io/entry/2016/02/29/092408 -->
+        <span class="kda">KDA: 
+        {{ ((p.kills + p.assists) / (p.deaths + 1)) | round(2) }}
+        ({{ p.kills }}/{{ p.deaths }}/{{ p.assists }})
+        </span>
+        {{ p.won }}
+        {{ p.tier }}
+        {% for i in p['items'] %}
+          <i class="items items-{{ itemname_to_cssreadable(i) }}">{{ i }}</i>
+        {% endfor %}
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% for r in m.rosters %}
+    <div class="{{ r.side }}" style="color: {{ r.side.split('-')[1] }}">
+    {{ r.team_kill_score }}
+    {{ r.turret_kill }}
+
+    {% for p in r.participants %}
+      {{ p.actor }}
+
+    {% endfor %}
+    </div>
+  {% endfor %}
+</section>
+{% endfor %}
+
+{% endif %}
+<link href="/static/sprite/items.css" rel="stylesheet">
+<link href="/static/sprite/hero.css" rel="stylesheet">
+{% endblock %}

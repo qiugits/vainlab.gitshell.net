@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block titlename %}
+<title>Vain</title>
+{% endblock %}
+
+{% block content %}
+
+<p>
+  <form class="" action="{{ url_for('vain.single_player') }}" method="post">
+    <input name="ign" type="text" />
+    <select name="reg">
+      <option value="ea">東アジア</option>
+      <option value="cn">中国</option>
+      <option value="na">北アメリカ</option>
+      <option value="eu">ヨーロッパ</option>
+      <option value="sa">南アメリカ</option>
+      <option value="sg">東南アジア</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</p>
+
+<dl>
+{% for key, val in res.items() %}
+<dt>{{ key }}: <dd>{{ val }}
+{% endfor %}
+
+{% endblock %}

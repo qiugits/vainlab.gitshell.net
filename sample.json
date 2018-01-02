@@ -1,0 +1,55 @@
+{'data': [{
+    'type': 'player', 
+    'id': '0f14c3de-e2c1-11e4-ac7a-06eb725f8a76', 
+    'attributes': {
+        'createdAt': '2017-12-23T10:20:28Z', 
+        'name': 'Qiuqiu', 
+        'patchVersion': '2.11', 
+        'shardId': 'ea', 
+        'stats': {
+            'elo_earned_season_4': 0, 
+            'elo_earned_season_5': 0,
+            'elo_earned_season_6': 0, 
+            'elo_earned_season_7': 0,
+            'elo_earned_season_8': 0, 
+            'elo_earned_season_9': 0, 
+            'gamesPlayed': {
+                'aral': 741, 
+                'blitz': 221, 
+                'blitz_rounds': 0, 
+                'casual': 2960, 
+                'ranked': 957
+            }, 
+            'guildTag': '', 
+            'karmaLevel': 1, 
+            'level': 30, 
+            'lifetimeGold': 0, 
+            'lossStreak': 0, 
+            'played': 0, 
+            'played_aral': 0, 
+            'played_blitz': 0, 
+            'played_casual': 0,
+            'played_ranked': 0, 
+            'rankPoints': {
+                'blitz': 1272.04608797205, 
+                'ranked': 1578.8994582506878
+            }, 
+            'skillTier': 17, 
+            'winStreak': 0, 
+            'wins': 2357, 
+            'xp': 175450
+        }, 
+        'titleId': 'semc-vainglory'
+    }, 
+    'relationships': {
+        'assets': {'data': []}}, 
+        'links': {
+            'schema': '', 
+            'self': 'https://api.dc01.gamelockerapp.com/shards/ea/players/0f14c3de-e2c1-11e4-ac7a-06eb725f8a76'
+        }
+}], 
+'links': {
+    'self': 'https://api.dc01.gamelockerapp.com/shards/ea/players?filter[playerNames]=Qiuqiu'
+}, 
+'meta': {}
+}

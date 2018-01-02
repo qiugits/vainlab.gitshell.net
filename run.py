@@ -7,7 +7,13 @@ from mymetrics.environment import if_is_development
 
 
 app = Flask(__name__)
-for m in [sbi.mod, vain.mod, beta.mod, ]:
+# Blueprints to use depending on environment (dev or prod)
+if if_is_development():
+    mods = [sbi.mod, vain.mod, beta.mod, ]
+else:
+    mods = [sbi.mod, ]
+# Deploy blueprints
+for m in mods:
     app.register_blueprint(m)
 
 

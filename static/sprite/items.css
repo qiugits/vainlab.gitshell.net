@@ -1,0 +1,449 @@
+.items {
+    background-image: url(items.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.items-aegis {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -1px;
+}
+
+.items-aftershock {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -1px;
+}
+
+.items-alternating-current {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -1px;
+}
+
+.items-atlas-pauldron {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -1px;
+}
+
+.items-barbed-needle {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -1px;
+}
+
+.items-blazing-salvo {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -1px;
+}
+
+.items-bonesaw {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -1px;
+}
+
+.items-book-of-eulogies {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -1px;
+}
+
+.items-breaking-point {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -67px;
+}
+
+.items-broken-myth {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -67px;
+}
+
+.items-chronograph {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -67px;
+}
+
+.items-clockwork {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -67px;
+}
+
+.items-coat-of-plates {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -67px;
+}
+
+.items-contraption {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -67px;
+}
+
+.items-crucible {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -67px;
+}
+
+.items-crystal-bit {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -67px;
+}
+
+.items-crystal-infusion {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -133px;
+}
+
+.items-dragonblood-contract {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -133px;
+}
+
+.items-dragonheart {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -133px;
+}
+
+.items-dragons-eye {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -133px;
+}
+
+.items-echo {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -133px;
+}
+
+.items-eclipse-prism {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -133px;
+}
+
+.items-energy-battery {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -133px;
+}
+
+.items-eve-of-harvest {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -133px;
+}
+
+.items-flare {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -199px;
+}
+
+.items-flaregun {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -199px;
+}
+
+.items-fountain-of-renewal {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -199px;
+}
+
+.items-frostburn {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -199px;
+}
+
+.items-halcyon-chargers {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -199px;
+}
+
+.items-halcyon-potion {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -199px;
+}
+
+.items-healing-flask {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -199px;
+}
+
+.items-heavy-prism {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -199px;
+}
+
+.items-heavy-steel {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -265px;
+}
+
+.items-hourglass {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -265px;
+}
+
+.items-ironguard-contract {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -265px;
+}
+
+.items-journey-boots {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -265px;
+}
+
+.items-kinetic-shield {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -265px;
+}
+
+.items-level-juice {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -265px;
+}
+
+.items-lifespring {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -265px;
+}
+
+.items-light-armor {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -265px;
+}
+
+.items-light-shield {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -331px;
+}
+
+.items-lucky-strike {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -331px;
+}
+
+.items-metal-jacket {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -331px;
+}
+
+.items-minion-candy {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -331px;
+}
+
+.items-minions-foot {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -331px;
+}
+
+.items-nullwave-gauntlet {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -331px;
+}
+
+.items-oakheart {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -331px;
+}
+
+.items-piercing-shard {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -331px;
+}
+
+.items-piercing-spear {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -397px;
+}
+
+.items-poisoned-shiv {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -397px;
+}
+
+.items-pot-of-gold {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -397px;
+}
+
+.items-protector-contract {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -397px;
+}
+
+.items-reflex-block {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -397px;
+}
+
+.items-scout-trap {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -397px;
+}
+
+.items-serpent-mask {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -397px;
+}
+
+.items-shatterglass {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -397px;
+}
+
+.items-shiversteel {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -463px;
+}
+
+.items-six-sins {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -463px;
+}
+
+.items-slumbering-husk {
+    width: 64px;
+    height: 64px;
+    background-position: -133px -463px;
+}
+
+.items-sorrowblade {
+    width: 64px;
+    height: 64px;
+    background-position: -199px -463px;
+}
+
+.items-spellfire {
+    width: 64px;
+    height: 64px;
+    background-position: -265px -463px;
+}
+
+.items-spellsword {
+    width: 64px;
+    height: 64px;
+    background-position: -331px -463px;
+}
+
+.items-sprint-boots {
+    width: 64px;
+    height: 64px;
+    background-position: -397px -463px;
+}
+
+.items-stormcrown {
+    width: 64px;
+    height: 64px;
+    background-position: -463px -463px;
+}
+
+.items-stormguard-banner {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -1px;
+}
+
+.items-swift-shooter {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -67px;
+}
+
+.items-tension-bow {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -133px;
+}
+
+.items-tornado-trigger {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -199px;
+}
+
+.items-travel-boots {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -265px;
+}
+
+.items-tyrants-monocle {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -331px;
+}
+
+.items-void-battery {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -397px;
+}
+
+.items-war-treads {
+    width: 64px;
+    height: 64px;
+    background-position: -529px -463px;
+}
+
+.items-weapon-blade {
+    width: 64px;
+    height: 64px;
+    background-position: -1px -529px;
+}
+
+.items-weapon-infusion {
+    width: 64px;
+    height: 64px;
+    background-position: -67px -529px;
+}

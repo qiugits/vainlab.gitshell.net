@@ -1,8 +1,8 @@
 from flask import Blueprint, render_template
-from flask_mail import Mail, Message
+# from flask_mail import Mail, Message
 
 mod = Blueprint('beta', __name__, url_prefix='/beta')
-mail = Mail(mod)
+# mail = Mail(mod)
 
 # mod.config.update(
 #     MAIL_SERVER='gitshell.net',

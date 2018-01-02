@@ -8,23 +8,25 @@
 <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
-      <div class="inner cover">
-        <h3>About</h3>
-        <p>
-          Creator: Qiu
-        </p>
-        <p>
-          My interest: Machine Learning, Deep Learning, Brain<br>
-          Hobby: Anime, Manga, Movie
-        </p>
-        <p>/ 
-          {% if accounts %}
-            {% for name, url in accounts %}
-              <a href={{ url }} target="_blank">{{ name }}</a> /
-            {% endfor %}
-          {% endif %}
-        </p>
-      </div>
+
+
+<main role="main" class="inner cover">
+  <h3>About</h3>
+  <p>
+    Creator: Qiu
+  <p>
+    My interest: Machine Learning, Deep Learning, Brain<br>Hobby: Anime, Manga, Movie
+  <p>
+    {% macro account(name, url) %}
+    <a href={{ url }} target="_blank">{{ name }}</a>
+    {% endmacro %}
+
+    / {{ account('Qiita', 'https://qiita.com/qiugits') }}
+    / {{ account('GitHub', 'https://github.com/qiugits') }}
+    /
+</main>
+
+
     </div>
   </div>
 </div>
