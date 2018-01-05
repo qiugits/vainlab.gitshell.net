@@ -1,4 +1,4 @@
-/* glue: 0.13 hash: c1b344bf84 */
+/* glue: 0.13 hash: aca2c263d3 */
         .sprite-items_resized-weapon-infusion,
 .sprite-items_resized-weapon-blade,
 .sprite-items_resized-war-treads,
@@ -79,446 +79,446 @@
         
         .sprite-items_resized-weapon-infusion {
             background-position: 0 0;
-            width: 66px;
-            height: 66px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-weapon-blade {
-            background-position: -66px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -34px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-war-treads {
-            background-position: 0 -66px;
-            width: 66px;
-            height: 65px;
+            background-position: 0 -34px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-void-battery {
-            background-position: -132px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -68px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-tyrants-monocle {
-            background-position: 0 -131px;
-            width: 66px;
-            height: 66px;
+            background-position: 0 -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-travel-boots {
-            background-position: -66px -131px;
-            width: 66px;
-            height: 66px;
+            background-position: -34px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-tornado-trigger {
-            background-position: -132px -131px;
-            width: 66px;
-            height: 66px;
+            background-position: -68px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-tension-bow {
-            background-position: -198px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -102px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-swift-shooter {
-            background-position: -198px -66px;
-            width: 66px;
-            height: 66px;
+            background-position: -102px -34px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-stormguard-banner {
-            background-position: 0 -197px;
-            width: 66px;
-            height: 66px;
+            background-position: 0 -102px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-stormcrown {
-            background-position: -198px -132px;
-            width: 66px;
-            height: 65px;
+            background-position: -102px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-sprint-boots {
-            background-position: -66px -197px;
-            width: 66px;
-            height: 66px;
+            background-position: -34px -102px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-spellsword {
-            background-position: -132px -197px;
-            width: 59px;
-            height: 66px;
+            background-position: -68px -102px;
+            width: 31px;
+            height: 34px;
         }
         
         .sprite-items_resized-spellfire {
-            background-position: -191px -197px;
-            width: 66px;
-            height: 66px;
+            background-position: -99px -102px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-sorrowblade {
-            background-position: -264px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -136px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-slumbering-husk {
-            background-position: -264px -66px;
-            width: 66px;
-            height: 66px;
+            background-position: -136px -34px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-six-sins {
-            background-position: -264px -132px;
-            width: 66px;
-            height: 66px;
+            background-position: -136px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-shiversteel {
-            background-position: 0 -263px;
-            width: 66px;
-            height: 66px;
+            background-position: 0 -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-shatterglass {
-            background-position: -66px -263px;
-            width: 66px;
-            height: 66px;
+            background-position: -34px -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-serpent-mask {
-            background-position: -132px -263px;
-            width: 66px;
-            height: 66px;
+            background-position: -68px -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-scout-trap {
-            background-position: -198px -263px;
-            width: 66px;
-            height: 66px;
+            background-position: -102px -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-reflex-block {
-            background-position: -264px -263px;
-            width: 66px;
-            height: 66px;
+            background-position: -136px -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-protector-contract {
-            background-position: -330px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -170px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-pot-of-gold {
-            background-position: -330px -66px;
-            width: 66px;
-            height: 66px;
+            background-position: -170px -34px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-poisoned-shiv {
-            background-position: -330px -132px;
-            width: 66px;
-            height: 66px;
+            background-position: -170px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-piercing-spear {
-            background-position: -330px -198px;
-            width: 66px;
-            height: 66px;
+            background-position: -170px -102px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-piercing-shard {
-            background-position: 0 -329px;
-            width: 66px;
-            height: 66px;
+            background-position: 0 -170px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-oakheart {
-            background-position: -66px -329px;
-            width: 66px;
-            height: 66px;
+            background-position: -34px -170px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-nullwave-gauntlet {
-            background-position: -132px -329px;
-            width: 66px;
-            height: 66px;
+            background-position: -68px -170px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-minions-foot {
-            background-position: -198px -329px;
-            width: 66px;
-            height: 66px;
+            background-position: -102px -170px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-minion-candy {
-            background-position: -264px -329px;
-            width: 66px;
-            height: 66px;
+            background-position: -136px -170px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-metal-jacket {
-            background-position: -330px -329px;
-            width: 66px;
-            height: 66px;
+            background-position: -170px -170px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-lucky-strike {
-            background-position: -396px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -204px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-light-shield {
-            background-position: -396px -66px;
-            width: 66px;
-            height: 66px;
+            background-position: -204px -34px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-light-armor {
-            background-position: -396px -132px;
-            width: 66px;
-            height: 66px;
+            background-position: -204px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-lifespring {
-            background-position: -396px -198px;
-            width: 66px;
-            height: 66px;
+            background-position: -204px -102px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-level-juice {
-            background-position: -396px -264px;
-            width: 66px;
-            height: 66px;
+            background-position: -204px -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-kinetic-shield {
-            background-position: 0 -395px;
-            width: 66px;
-            height: 66px;
+            background-position: 0 -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-journey-boots {
-            background-position: -66px -395px;
-            width: 66px;
-            height: 66px;
+            background-position: -34px -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-ironguard-contract {
-            background-position: -132px -395px;
-            width: 66px;
-            height: 66px;
+            background-position: -68px -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-hourglass {
-            background-position: -198px -395px;
-            width: 66px;
-            height: 66px;
+            background-position: -102px -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-heavy-steel {
-            background-position: -264px -395px;
-            width: 66px;
-            height: 66px;
+            background-position: -136px -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-heavy-prism {
-            background-position: -330px -395px;
-            width: 66px;
-            height: 66px;
+            background-position: -170px -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-healing-flask {
-            background-position: -396px -395px;
-            width: 66px;
-            height: 66px;
+            background-position: -204px -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-halcyon-potion {
-            background-position: -462px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -238px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-halcyon-chargers {
-            background-position: -462px -66px;
-            width: 66px;
-            height: 65px;
+            background-position: -238px -34px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-frostburn {
-            background-position: -462px -131px;
-            width: 66px;
-            height: 66px;
+            background-position: -238px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-fountain-of-renewal {
-            background-position: -462px -197px;
-            width: 66px;
-            height: 66px;
+            background-position: -238px -102px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-flaregun {
-            background-position: -462px -263px;
-            width: 66px;
-            height: 65px;
+            background-position: -238px -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-flare {
-            background-position: -462px -328px;
-            width: 66px;
-            height: 66px;
+            background-position: -238px -169px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-eve-of-harvest {
-            background-position: -462px -394px;
-            width: 66px;
-            height: 66px;
+            background-position: -238px -203px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-energy-battery {
-            background-position: 0 -461px;
-            width: 66px;
-            height: 66px;
+            background-position: 0 -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-eclipse-prism {
-            background-position: -66px -461px;
-            width: 66px;
-            height: 66px;
+            background-position: -34px -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-echo {
-            background-position: -132px -461px;
-            width: 66px;
-            height: 66px;
+            background-position: -68px -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-dragons-eye {
-            background-position: -198px -461px;
-            width: 66px;
-            height: 66px;
+            background-position: -102px -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-dragonheart {
-            background-position: -264px -461px;
-            width: 66px;
-            height: 66px;
+            background-position: -136px -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-dragonblood-contract {
-            background-position: -330px -461px;
-            width: 66px;
-            height: 66px;
+            background-position: -170px -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-crystal-infusion {
-            background-position: -396px -461px;
-            width: 66px;
-            height: 66px;
+            background-position: -204px -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-crystal-bit {
-            background-position: -462px -461px;
-            width: 66px;
-            height: 66px;
+            background-position: -238px -238px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-crucible {
-            background-position: -528px 0;
-            width: 66px;
-            height: 66px;
+            background-position: -272px 0;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-contraption {
-            background-position: -528px -66px;
-            width: 66px;
-            height: 66px;
+            background-position: -272px -34px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-coat-of-plates {
-            background-position: -528px -132px;
-            width: 66px;
-            height: 66px;
+            background-position: -272px -68px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-clockwork {
-            background-position: -528px -198px;
-            width: 66px;
-            height: 66px;
+            background-position: -272px -102px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-chronograph {
-            background-position: -528px -264px;
-            width: 66px;
-            height: 66px;
+            background-position: -272px -136px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-broken-myth {
-            background-position: -528px -330px;
-            width: 66px;
-            height: 66px;
+            background-position: -272px -170px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-breaking-point {
-            background-position: -528px -396px;
-            width: 66px;
-            height: 66px;
+            background-position: -272px -204px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-book-of-eulogies {
-            background-position: 0 -527px;
-            width: 66px;
-            height: 66px;
+            background-position: 0 -272px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-bonesaw {
-            background-position: -66px -527px;
-            width: 66px;
-            height: 66px;
+            background-position: -34px -272px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-blazing-salvo {
-            background-position: -132px -527px;
-            width: 66px;
-            height: 66px;
+            background-position: -68px -272px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-barbed-needle {
-            background-position: -198px -527px;
-            width: 66px;
-            height: 66px;
+            background-position: -102px -272px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-atlas-pauldron {
-            background-position: -264px -527px;
-            width: 66px;
-            height: 66px;
+            background-position: -136px -272px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-alternating-current {
-            background-position: -330px -527px;
-            width: 66px;
-            height: 66px;
+            background-position: -170px -272px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-aftershock {
-            background-position: -396px -527px;
-            width: 66px;
-            height: 66px;
+            background-position: -204px -272px;
+            width: 34px;
+            height: 34px;
         }
         
         .sprite-items_resized-aegis {
-            background-position: -462px -527px;
-            width: 66px;
-            height: 66px;
+            background-position: -238px -272px;
+            width: 34px;
+            height: 34px;
         }
         
         @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
@@ -597,9 +597,91 @@
     .sprite-items_resized-aftershock,
     .sprite-items_resized-aegis {
                 background-image: url('items_resized.png');
-                -webkit-background-size: 594px 593px;
-                -moz-background-size: 594px 593px;
-                background-size: 594px 593px;
+                -webkit-background-size: 306px 306px;
+                -moz-background-size: 306px 306px;
+                background-size: 306px 306px;
+            }
+        }
+        
+        @media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (-o-min-device-pixel-ratio: 200/100), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dppx) {
+            .sprite-items_resized-weapon-infusion,
+    .sprite-items_resized-weapon-blade,
+    .sprite-items_resized-war-treads,
+    .sprite-items_resized-void-battery,
+    .sprite-items_resized-tyrants-monocle,
+    .sprite-items_resized-travel-boots,
+    .sprite-items_resized-tornado-trigger,
+    .sprite-items_resized-tension-bow,
+    .sprite-items_resized-swift-shooter,
+    .sprite-items_resized-stormguard-banner,
+    .sprite-items_resized-stormcrown,
+    .sprite-items_resized-sprint-boots,
+    .sprite-items_resized-spellsword,
+    .sprite-items_resized-spellfire,
+    .sprite-items_resized-sorrowblade,
+    .sprite-items_resized-slumbering-husk,
+    .sprite-items_resized-six-sins,
+    .sprite-items_resized-shiversteel,
+    .sprite-items_resized-shatterglass,
+    .sprite-items_resized-serpent-mask,
+    .sprite-items_resized-scout-trap,
+    .sprite-items_resized-reflex-block,
+    .sprite-items_resized-protector-contract,
+    .sprite-items_resized-pot-of-gold,
+    .sprite-items_resized-poisoned-shiv,
+    .sprite-items_resized-piercing-spear,
+    .sprite-items_resized-piercing-shard,
+    .sprite-items_resized-oakheart,
+    .sprite-items_resized-nullwave-gauntlet,
+    .sprite-items_resized-minions-foot,
+    .sprite-items_resized-minion-candy,
+    .sprite-items_resized-metal-jacket,
+    .sprite-items_resized-lucky-strike,
+    .sprite-items_resized-light-shield,
+    .sprite-items_resized-light-armor,
+    .sprite-items_resized-lifespring,
+    .sprite-items_resized-level-juice,
+    .sprite-items_resized-kinetic-shield,
+    .sprite-items_resized-journey-boots,
+    .sprite-items_resized-ironguard-contract,
+    .sprite-items_resized-hourglass,
+    .sprite-items_resized-heavy-steel,
+    .sprite-items_resized-heavy-prism,
+    .sprite-items_resized-healing-flask,
+    .sprite-items_resized-halcyon-potion,
+    .sprite-items_resized-halcyon-chargers,
+    .sprite-items_resized-frostburn,
+    .sprite-items_resized-fountain-of-renewal,
+    .sprite-items_resized-flaregun,
+    .sprite-items_resized-flare,
+    .sprite-items_resized-eve-of-harvest,
+    .sprite-items_resized-energy-battery,
+    .sprite-items_resized-eclipse-prism,
+    .sprite-items_resized-echo,
+    .sprite-items_resized-dragons-eye,
+    .sprite-items_resized-dragonheart,
+    .sprite-items_resized-dragonblood-contract,
+    .sprite-items_resized-crystal-infusion,
+    .sprite-items_resized-crystal-bit,
+    .sprite-items_resized-crucible,
+    .sprite-items_resized-contraption,
+    .sprite-items_resized-coat-of-plates,
+    .sprite-items_resized-clockwork,
+    .sprite-items_resized-chronograph,
+    .sprite-items_resized-broken-myth,
+    .sprite-items_resized-breaking-point,
+    .sprite-items_resized-book-of-eulogies,
+    .sprite-items_resized-bonesaw,
+    .sprite-items_resized-blazing-salvo,
+    .sprite-items_resized-barbed-needle,
+    .sprite-items_resized-atlas-pauldron,
+    .sprite-items_resized-alternating-current,
+    .sprite-items_resized-aftershock,
+    .sprite-items_resized-aegis {
+                background-image: url('items_resized@2x.png');
+                -webkit-background-size: 306px 306px;
+                -moz-background-size: 306px 306px;
+                background-size: 306px 306px;
             }
         }
         

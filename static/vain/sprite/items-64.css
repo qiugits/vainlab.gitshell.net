@@ -1,0 +1,461 @@
+/* glue: 0.13 hash: e9dc101195 */
+/* qiu's edit 15:54 */
+.sprite-items-64-weapon-infusion,.sprite-items-64-weapon-blade,.sprite-items-64-war-treads,.sprite-items-64-void-battery,.sprite-items-64-tyrants-monocle,.sprite-items-64-travel-boots,.sprite-items-64-tornado-trigger,.sprite-items-64-tension-bow,.sprite-items-64-swift-shooter,.sprite-items-64-stormguard-banner,.sprite-items-64-stormcrown,.sprite-items-64-sprint-boots,.sprite-items-64-spellsword,.sprite-items-64-spellfire,.sprite-items-64-sorrowblade,.sprite-items-64-slumbering-husk,.sprite-items-64-six-sins,.sprite-items-64-shiversteel,.sprite-items-64-shatterglass,.sprite-items-64-serpent-mask,.sprite-items-64-scout-trap,.sprite-items-64-reflex-block,.sprite-items-64-protector-contract,.sprite-items-64-pot-of-gold,.sprite-items-64-poisoned-shiv,.sprite-items-64-piercing-spear,.sprite-items-64-piercing-shard,.sprite-items-64-oakheart,.sprite-items-64-nullwave-gauntlet,.sprite-items-64-minions-foot,.sprite-items-64-minion-candy,.sprite-items-64-metal-jacket,.sprite-items-64-lucky-strike,.sprite-items-64-light-shield,.sprite-items-64-light-armor,.sprite-items-64-lifespring,.sprite-items-64-level-juice,.sprite-items-64-kinetic-shield,.sprite-items-64-journey-boots,.sprite-items-64-ironguard-contract,.sprite-items-64-hourglass,.sprite-items-64-heavy-steel,.sprite-items-64-heavy-prism,.sprite-items-64-healing-flask,.sprite-items-64-halcyon-potion,.sprite-items-64-halcyon-chargers,.sprite-items-64-frostburn,.sprite-items-64-fountain-of-renewal,.sprite-items-64-flaregun,.sprite-items-64-flare,.sprite-items-64-eve-of-harvest,.sprite-items-64-energy-battery,.sprite-items-64-eclipse-prism,.sprite-items-64-echo,.sprite-items-64-dragons-eye,.sprite-items-64-dragonheart,.sprite-items-64-dragonblood-contract,.sprite-items-64-crystal-infusion,.sprite-items-64-crystal-bit,.sprite-items-64-crucible,.sprite-items-64-contraption,.sprite-items-64-coat-of-plates,.sprite-items-64-clockwork,.sprite-items-64-chronograph,.sprite-items-64-broken-myth,.sprite-items-64-breaking-point,.sprite-items-64-book-of-eulogies,.sprite-items-64-bonesaw,.sprite-items-64-blazing-salvo,.sprite-items-64-barbed-needle,.sprite-items-64-atlas-pauldron,.sprite-items-64-alternating-current,.sprite-items-64-aftershock,.sprite-items-64-aegis {
+    background-image: url('items-64.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-items-64-weapon-infusion {
+    background-position: 0 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-weapon-blade {
+    background-position: -66px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-war-treads {
+    background-position: 0 -66px;
+    width: 66px;
+    height: 65px;
+}
+
+.sprite-items-64-void-battery {
+    background-position: -132px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-tyrants-monocle {
+    background-position: 0 -131px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-travel-boots {
+    background-position: -66px -131px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-tornado-trigger {
+    background-position: -132px -131px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-tension-bow {
+    background-position: -198px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-swift-shooter {
+    background-position: -198px -66px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-stormguard-banner {
+    background-position: 0 -197px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-stormcrown {
+    background-position: -198px -132px;
+    width: 66px;
+    height: 65px;
+}
+
+.sprite-items-64-sprint-boots {
+    background-position: -66px -197px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-spellsword {
+    background-position: -132px -197px;
+    width: 59px;
+    height: 66px;
+}
+
+.sprite-items-64-spellfire {
+    background-position: -191px -197px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-sorrowblade {
+    background-position: -264px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-slumbering-husk {
+    background-position: -264px -66px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-six-sins {
+    background-position: -264px -132px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-shiversteel {
+    background-position: 0 -263px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-shatterglass {
+    background-position: -66px -263px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-serpent-mask {
+    background-position: -132px -263px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-scout-trap {
+    background-position: -198px -263px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-reflex-block {
+    background-position: -264px -263px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-protector-contract {
+    background-position: -330px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-pot-of-gold {
+    background-position: -330px -66px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-poisoned-shiv {
+    background-position: -330px -132px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-piercing-spear {
+    background-position: -330px -198px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-piercing-shard {
+    background-position: 0 -329px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-oakheart {
+    background-position: -66px -329px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-nullwave-gauntlet {
+    background-position: -132px -329px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-minions-foot {
+    background-position: -198px -329px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-minion-candy {
+    background-position: -264px -329px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-metal-jacket {
+    background-position: -330px -329px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-lucky-strike {
+    background-position: -396px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-light-shield {
+    background-position: -396px -66px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-light-armor {
+    background-position: -396px -132px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-lifespring {
+    background-position: -396px -198px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-level-juice {
+    background-position: -396px -264px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-kinetic-shield {
+    background-position: 0 -395px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-journey-boots {
+    background-position: -66px -395px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-ironguard-contract {
+    background-position: -132px -395px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-hourglass {
+    background-position: -198px -395px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-heavy-steel {
+    background-position: -264px -395px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-heavy-prism {
+    background-position: -330px -395px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-healing-flask {
+    background-position: -396px -395px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-halcyon-potion {
+    background-position: -462px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-halcyon-chargers {
+    background-position: -462px -66px;
+    width: 66px;
+    height: 65px;
+}
+
+.sprite-items-64-frostburn {
+    background-position: -462px -131px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-fountain-of-renewal {
+    background-position: -462px -197px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-flaregun {
+    background-position: -462px -263px;
+    width: 66px;
+    height: 65px;
+}
+
+.sprite-items-64-flare {
+    background-position: -462px -328px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-eve-of-harvest {
+    background-position: -462px -394px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-energy-battery {
+    background-position: 0 -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-eclipse-prism {
+    background-position: -66px -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-echo {
+    background-position: -132px -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-dragons-eye {
+    background-position: -198px -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-dragonheart {
+    background-position: -264px -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-dragonblood-contract {
+    background-position: -330px -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-crystal-infusion {
+    background-position: -396px -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-crystal-bit {
+    background-position: -462px -461px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-crucible {
+    background-position: -528px 0;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-contraption {
+    background-position: -528px -66px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-coat-of-plates {
+    background-position: -528px -132px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-clockwork {
+    background-position: -528px -198px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-chronograph {
+    background-position: -528px -264px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-broken-myth {
+    background-position: -528px -330px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-breaking-point {
+    background-position: -528px -396px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-book-of-eulogies {
+    background-position: 0 -527px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-bonesaw {
+    background-position: -66px -527px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-blazing-salvo {
+    background-position: -132px -527px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-barbed-needle {
+    background-position: -198px -527px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-atlas-pauldron {
+    background-position: -264px -527px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-alternating-current {
+    background-position: -330px -527px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-aftershock {
+    background-position: -396px -527px;
+    width: 66px;
+    height: 66px;
+}
+
+.sprite-items-64-aegis {
+    background-position: -462px -527px;
+    width: 66px;
+    height: 66px;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+    .sprite-items-64-weapon-infusion, .sprite-items-64-weapon-blade, .sprite-items-64-war-treads, .sprite-items-64-void-battery, .sprite-items-64-tyrants-monocle, .sprite-items-64-travel-boots, .sprite-items-64-tornado-trigger, .sprite-items-64-tension-bow, .sprite-items-64-swift-shooter, .sprite-items-64-stormguard-banner, .sprite-items-64-stormcrown, .sprite-items-64-sprint-boots, .sprite-items-64-spellsword, .sprite-items-64-spellfire, .sprite-items-64-sorrowblade, .sprite-items-64-slumbering-husk, .sprite-items-64-six-sins, .sprite-items-64-shiversteel, .sprite-items-64-shatterglass, .sprite-items-64-serpent-mask, .sprite-items-64-scout-trap, .sprite-items-64-reflex-block, .sprite-items-64-protector-contract, .sprite-items-64-pot-of-gold, .sprite-items-64-poisoned-shiv, .sprite-items-64-piercing-spear, .sprite-items-64-piercing-shard, .sprite-items-64-oakheart, .sprite-items-64-nullwave-gauntlet, .sprite-items-64-minions-foot, .sprite-items-64-minion-candy, .sprite-items-64-metal-jacket, .sprite-items-64-lucky-strike, .sprite-items-64-light-shield, .sprite-items-64-light-armor, .sprite-items-64-lifespring, .sprite-items-64-level-juice, .sprite-items-64-kinetic-shield, .sprite-items-64-journey-boots, .sprite-items-64-ironguard-contract, .sprite-items-64-hourglass, .sprite-items-64-heavy-steel, .sprite-items-64-heavy-prism, .sprite-items-64-healing-flask, .sprite-items-64-halcyon-potion, .sprite-items-64-halcyon-chargers, .sprite-items-64-frostburn, .sprite-items-64-fountain-of-renewal, .sprite-items-64-flaregun, .sprite-items-64-flare, .sprite-items-64-eve-of-harvest, .sprite-items-64-energy-battery, .sprite-items-64-eclipse-prism, .sprite-items-64-echo, .sprite-items-64-dragons-eye, .sprite-items-64-dragonheart, .sprite-items-64-dragonblood-contract, .sprite-items-64-crystal-infusion, .sprite-items-64-crystal-bit, .sprite-items-64-crucible, .sprite-items-64-contraption, .sprite-items-64-coat-of-plates, .sprite-items-64-clockwork, .sprite-items-64-chronograph, .sprite-items-64-broken-myth, .sprite-items-64-breaking-point, .sprite-items-64-book-of-eulogies, .sprite-items-64-bonesaw, .sprite-items-64-blazing-salvo, .sprite-items-64-barbed-needle, .sprite-items-64-atlas-pauldron, .sprite-items-64-alternating-current, .sprite-items-64-aftershock, .sprite-items-64-aegis {
+        background-image: url('items-64.png');
+        -webkit-background-size: 594px 593px;
+        -moz-background-size: 594px 593px;
+        background-size: 594px 593px;
+    }
+}

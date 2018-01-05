@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for
-from mymetrics.vain_api import VainAPI, itemname_to_cssreadable
+from mymetrics.vain_api import VainAPI, itemname_to_cssreadable, \
+    particularplayer_from_singlematch
 
 mod = Blueprint('vain', __name__, url_prefix='/vain')
 
@@ -50,7 +51,8 @@ def matches(reg=None, ign=None):
             matches = {'rslt': 'Lacks reg and ign'}
         return render_template('vain/matches.html',
                                matches=matches, player_id=player_id,
-                               itemname_to_cssreadable=itemname_to_cssreadable)
+                               itemname_to_cssreadable=itemname_to_cssreadable,
+                               this_player=particularplayer_from_singlematch)
     else:
         reg = request.form['reg']
         ign = request.form['ign']

@@ -88,6 +88,8 @@ class VainAPI:
                                 'kills': v[2],
                                 'deaths': v[3],
                                 'assists': v[4],
+                                # KDA
+                                'kda': (v[2] + v[4]) / (v[3] + 1),
                                 'gold': int(v[5]),
                                 'farm': int(v[6]),
                                 'items': v[7],
@@ -99,14 +101,18 @@ class VainAPI:
                            'side': v[1].replace('/', '-'),
                            'turret_kill': v[2],
                            'turret_remain': v[3],
-                           'participants': [participants[p['id']]
-                                            for p in v[4]]}
+                           'participants': [participants[data['id']] for data in v[4]]}
                        for k, v in _rosters.items()}
             matches = [{'duration': v[0],
                         'mode': v[1],
                         'version': v[2],
-                        'rosters': [rosters[r['id']] for r in v[3]]}
+                        'rosters': [rosters[r['id']] for r in v[3]],
+                        }
                        for v in _matches.values()]
+            # for m in matches:
+            #     m['participants'] = {k: v for k, v in participants.items()
+            #                          if k in [i for r in m['rosters']
+            #                                   for i in r['participants']]}
         return matches
 
 
@@ -115,3 +121,10 @@ class VainAPI:
 # ================
 def itemname_to_cssreadable(name):
     return name.replace(' ', '-').replace("'", "").lower()
+
+
+def particularplayer_from_singlematch(match, player_id):
+    for r in match['rosters']:
+        for p in r['participants']:
+            if p['player_id'] == player_id:
+                return p

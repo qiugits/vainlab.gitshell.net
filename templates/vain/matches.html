@@ -29,49 +29,52 @@
 {{ player_id }}
 
 {% for m in matches %}
+{% set p = this_player(m, player_id) %}
 <section>
-  <h3>
-  {{ m.mode }}
-  {{ m.duration }}
-  </h3>
-  
-  {% for r in m.rosters %}
-    {% for p in r.participants %}
-      {% if p.player_id == player_id %}
-      <div class="played">
-        <i class="hero hero-{{ p.actor.replace('*', '') }}_Portrait">{{ p.actor.replace('*', '') }}</i>
-        {{ p.gold }}
-        {{ p.farm }}
-        <!-- KDA http://vainglory.pchw.io/entry/2016/02/29/092408 -->
-        <span class="kda">KDA: 
-        {{ ((p.kills + p.assists) / (p.deaths + 1)) | round(2) }}
-        ({{ p.kills }}/{{ p.deaths }}/{{ p.assists }})
-        </span>
-        {{ p.won }}
-        {{ p.tier }}
+  <div class="single-match" style="display: table;">
+    <h3>
+      {{ m.mode }}
+      {{ p.won }}
+    </h3>
+
+    <div class="m-summary" style="display: table-cell; float: left;">
+      <i class="hero hero-{{ p.actor.replace('*', '') }}_Portrait"></i>
+    </div>
+
+    <div class="m-details" style="display: table-cell; float: right;">
+      <div class="item-build" style="display: table;">
         {% for i in p['items'] %}
-          <i class="items items-{{ itemname_to_cssreadable(i) }}">{{ i }}</i>
+        <div class="singleitem" style="display: table-cell">
+          <i class="sprite-items-64-{{ itemname_to_cssreadable(i) }}"></i>
+        </div>
         {% endfor %}
       </div>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
 
-  {% for r in m.rosters %}
-    <div class="{{ r.side }}" style="color: {{ r.side.split('-')[1] }}">
-    {{ r.team_kill_score }}
-    {{ r.turret_kill }}
+      {{ p.gold }}
+      {{ p.farm }}
+      <!-- KDA http://vainglory.pchw.io/entry/2016/02/29/092408 -->
+      <span class="kda">KDA: 
+        {{ p.kda | round(2) }} ({{ p.kills }}/{{ p.deaths }}/{{ p.assists }})
+      </span>
+      {{ m.duration }}
+      {% for r in m.rosters %}
+      <div class="{{ r.side }}" style="color: {{ r.side.split('-')[1] }}">
+        {{ r.team_kill_score }}
+        {{ r.turret_kill }}
 
-    {% for p in r.participants %}
-      {{ p.actor }}
+        {% for p in r.participants %}
+        {{ p.actor }}
 
-    {% endfor %}
+        {% endfor %}
+      </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+
+  </div>
 </section>
 {% endfor %}
 
 {% endif %}
-<link href="/static/sprite/items.css" rel="stylesheet">
+<link href="/static/vain/sprite/items-64.css" rel="stylesheet">
 <link href="/static/sprite/hero.css" rel="stylesheet">
 {% endblock %}
