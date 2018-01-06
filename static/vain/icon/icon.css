@@ -1,0 +1,45 @@
+.icon {
+    width: fit-content;
+}
+
+
+.icon-duration {
+    background-image: url('duration.svg');
+    background-color: #609dff;
+    display: block;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: auto;
+}
+.icon-turrets {
+    background-image: url('turrets.svg');
+    background-color: #609dff;
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+    width: auto;
+}
+.icon-cs {
+    background-image: url('cs.svg');
+    background-color: #609dff;
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+    width: inherit;
+}
+.icon-kills {
+    background-image: url('kills.svg');
+    background-color: #609dff;
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+    width: auto;
+}
+.icon-gold {
+    background-image: url('gold.svg');
+    background-color: #609dff;
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+    width: fit-content;
+}
