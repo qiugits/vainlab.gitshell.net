@@ -1,3 +1,159 @@
+html {
+    height: 100%;
+}
+
 body {
-  background: #ddd;
+    height: 100%;
+    background: #ddd;
+}
+
+.matches-main {
+    display: flex;
+    flex-direction: column;
+}
+.search-form {
+    background: #fff;
+    flex: 0 0;
+    text-align: center;
+}
+.all-matches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.single-match {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: #fff;
+    border-radius: 8px;
+    max-width: 780px;
+    margin: 4px 8px;
+}
+.m-summary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin: 4px;
+}
+/*
+.role {
+    background-color: purple;
+
+    height: 128px;
+    width: 128px;
+    border-radius: 64px;
+    border-bottom-right-radius: 10px;
+}
+*/
+.won {
+    /* background-color is defined in html */
+    height: 128px;
+    width: 128px;
+    border-radius: 64px;
+    border-bottom-right-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.hero {
+    height: 108px;
+    border-radius: 54px;
+}
+.m-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/*
+@media all and (max-width: 500px) {
+    .m-details {
+        flex-direction: column;
+    }
+}
+*/
+.item-build-wrapper {
+    /* no size change as flex item */
+    flex: 0 1 316px;
+
+    display: flex;
+    align-items: center;
+}
+.item-build {
+    flex 0 1;
+    /* flex box */
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    background-color: #ccc;
+    border-radius: 37px;
+    height: 64+10px;
+    width: 316px;
+}
+.single-item {
+    margin: 2px;
+}
+.single-item img {
+    width: 48px;
+    height: 48px;
+}
+.player-stats {
+    flex: 1 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 160px;
+}
+.player-stats > div {
+    display: flex;
+    flex-direction: row;
+    
+}
+.rosters {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 160px;
+}
+.roster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.roster-stats {}
+.roster-participants i {
+    border-radius: 50%;
+    margin: 2px;
+}
+
+
+/* All above are widest mode settings
+ * Here we set for shallower cases
+ */
+@media all and (max-width: 630px) {
+    .player-stats {
+        flex-direction: row;
+        justify-content: space-around;
+
+        min-width: unset;
+    }
+    .player-stats > div {
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 780px) {
+    .rosters {
+        display: none;
+    }
 }

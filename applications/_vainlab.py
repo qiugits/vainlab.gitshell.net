@@ -2,8 +2,8 @@ from flask import Blueprint, render_template, request, redirect, url_for
 from mymetrics.vain_api import VainAPI, itemname_to_cssreadable, \
     particularplayer_from_singlematch
 
-mod = Blueprint('vain', __name__, url_prefix='/vain')
-# mod = Blueprint('vain', __name__, subdomain='vainlab')
+# mod = Blueprint('vain', __name__, url_prefix='/vain')
+mod = Blueprint('vain', __name__, subdomain='vainlab')
 
 
 @mod.route('/')

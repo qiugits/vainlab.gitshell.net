@@ -7,7 +7,7 @@ function prepare () {
         convert -resize "${2}x${2}" "${n}" "${newfname}"
     done
     rm "sprite/${1}-${2}.css"
-    glue "${1}-${2}" sprite -p=1 --css-template sprite/css-template.css
+    glue "${1}-${2}" sprite --css-template sprite/css-template.css
 }
 prepare items 64
 prepare hero 288

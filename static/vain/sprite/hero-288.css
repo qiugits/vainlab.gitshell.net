@@ -1,4 +1,4 @@
-/* glue: 0.13 hash: 48c6696fd7 */
+/* glue: 0.13 hash: 2c133bfbfe */
 /* qiu's edit 15:54 */
 .sprite-hero-288-Vox_Portrait,.sprite-hero-288-Varya_Portrait,.sprite-hero-288-Taka_Portrait,.sprite-hero-288-Skye_Portrait,.sprite-hero-288-Skaarf_Portrait,.sprite-hero-288-Samuel_Portrait,.sprite-hero-288-SAW_Portrait,.sprite-hero-288-Rona_Portrait,.sprite-hero-288-Ringo_Portrait,.sprite-hero-288-Reza_Portrait,.sprite-hero-288-Reim_Portrait,.sprite-hero-288-Phinn_Portrait,.sprite-hero-288-Petal_Portrait,.sprite-hero-288-Ozo_Portrait,.sprite-hero-288-Lyra_Portrait,.sprite-hero-288-Lorelai_Portrait,.sprite-hero-288-Lance_Portrait,.sprite-hero-288-Krul_Portrait,.sprite-hero-288-Koshka_Portrait,.sprite-hero-288-Kestrel_Portrait,.sprite-hero-288-Joule_Portrait,.sprite-hero-288-Idris_Portrait,.sprite-hero-288-Gwen_Portrait,.sprite-hero-288-Grumpjaw_Portrait,.sprite-hero-288-Grace_Portrait,.sprite-hero-288-Glaive_Portrait,.sprite-hero-288-Fortress_Portrait,.sprite-hero-288-Flicker_Portrait,.sprite-hero-288-Churnwalker_Portrait,.sprite-hero-288-Celeste_Portrait,.sprite-hero-288-Catherine_Portrait,.sprite-hero-288-Blackfeather_Portrait,.sprite-hero-288-Baron_Portrait,.sprite-hero-288-Baptiste_Portrait,.sprite-hero-288-Ardan_Portrait,.sprite-hero-288-Alpha_Portrait,.sprite-hero-288-Adagio_Portrait {
     background-image: url('hero-288.png');
@@ -8,232 +8,232 @@
 
 .sprite-hero-288-Vox_Portrait {
     background-position: 0 0;
-    width: 290px;
-    height: 290px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Varya_Portrait {
-    background-position: -290px 0;
-    width: 290px;
-    height: 290px;
+    background-position: -288px 0;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Taka_Portrait {
-    background-position: 0 -290px;
-    width: 290px;
-    height: 290px;
+    background-position: 0 -288px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Skye_Portrait {
-    background-position: -290px -290px;
-    width: 290px;
-    height: 290px;
+    background-position: -288px -288px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Skaarf_Portrait {
-    background-position: -580px 0;
-    width: 290px;
-    height: 290px;
+    background-position: -576px 0;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Samuel_Portrait {
-    background-position: -580px -290px;
-    width: 290px;
-    height: 290px;
+    background-position: -576px -288px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-SAW_Portrait {
-    background-position: 0 -580px;
-    width: 290px;
-    height: 290px;
+    background-position: 0 -576px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Rona_Portrait {
-    background-position: -290px -580px;
-    width: 290px;
-    height: 290px;
+    background-position: -288px -576px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Ringo_Portrait {
-    background-position: -580px -580px;
-    width: 290px;
-    height: 290px;
+    background-position: -576px -576px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Reza_Portrait {
-    background-position: -870px 0;
-    width: 290px;
-    height: 290px;
+    background-position: -864px 0;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Reim_Portrait {
-    background-position: -870px -290px;
-    width: 290px;
-    height: 290px;
+    background-position: -864px -288px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Phinn_Portrait {
-    background-position: -870px -580px;
-    width: 290px;
-    height: 290px;
+    background-position: -864px -576px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Petal_Portrait {
-    background-position: 0 -870px;
-    width: 290px;
-    height: 290px;
+    background-position: 0 -864px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Ozo_Portrait {
-    background-position: -290px -870px;
-    width: 290px;
-    height: 290px;
+    background-position: -288px -864px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Lyra_Portrait {
-    background-position: -580px -870px;
-    width: 290px;
-    height: 290px;
+    background-position: -576px -864px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Lorelai_Portrait {
-    background-position: -870px -870px;
-    width: 290px;
-    height: 290px;
+    background-position: -864px -864px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Lance_Portrait {
-    background-position: -1160px 0;
-    width: 290px;
-    height: 290px;
+    background-position: -1152px 0;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Krul_Portrait {
-    background-position: -1160px -290px;
-    width: 290px;
-    height: 290px;
+    background-position: -1152px -288px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Koshka_Portrait {
-    background-position: -1160px -580px;
-    width: 290px;
-    height: 290px;
+    background-position: -1152px -576px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Kestrel_Portrait {
-    background-position: -1160px -870px;
-    width: 290px;
-    height: 290px;
+    background-position: -1152px -864px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Joule_Portrait {
-    background-position: 0 -1160px;
-    width: 290px;
-    height: 290px;
+    background-position: 0 -1152px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Idris_Portrait {
-    background-position: -290px -1160px;
-    width: 290px;
-    height: 290px;
+    background-position: -288px -1152px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Gwen_Portrait {
-    background-position: -580px -1160px;
-    width: 290px;
-    height: 290px;
+    background-position: -576px -1152px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Grumpjaw_Portrait {
-    background-position: -870px -1160px;
-    width: 290px;
-    height: 290px;
+    background-position: -864px -1152px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Grace_Portrait {
-    background-position: -1160px -1160px;
-    width: 290px;
-    height: 290px;
+    background-position: -1152px -1152px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Glaive_Portrait {
-    background-position: -1450px 0;
-    width: 290px;
-    height: 290px;
+    background-position: -1440px 0;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Fortress_Portrait {
-    background-position: -1450px -290px;
-    width: 290px;
-    height: 290px;
+    background-position: -1440px -288px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Flicker_Portrait {
-    background-position: -1450px -580px;
-    width: 290px;
-    height: 290px;
+    background-position: -1440px -576px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Churnwalker_Portrait {
-    background-position: -1450px -870px;
-    width: 290px;
-    height: 290px;
+    background-position: -1440px -864px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Celeste_Portrait {
-    background-position: -1450px -1160px;
-    width: 290px;
-    height: 290px;
+    background-position: -1440px -1152px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Catherine_Portrait {
-    background-position: 0 -1450px;
-    width: 290px;
-    height: 290px;
+    background-position: 0 -1440px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Blackfeather_Portrait {
-    background-position: -290px -1450px;
-    width: 290px;
-    height: 290px;
+    background-position: -288px -1440px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Baron_Portrait {
-    background-position: -580px -1450px;
-    width: 290px;
-    height: 290px;
+    background-position: -576px -1440px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Baptiste_Portrait {
-    background-position: -870px -1450px;
-    width: 290px;
-    height: 290px;
+    background-position: -864px -1440px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Ardan_Portrait {
-    background-position: -1160px -1450px;
-    width: 290px;
-    height: 290px;
+    background-position: -1152px -1440px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Alpha_Portrait {
-    background-position: -1450px -1450px;
-    width: 290px;
-    height: 290px;
+    background-position: -1440px -1440px;
+    width: 288px;
+    height: 288px;
 }
 
 .sprite-hero-288-Adagio_Portrait {
-    background-position: -1740px 0;
-    width: 290px;
-    height: 290px;
+    background-position: -1728px 0;
+    width: 288px;
+    height: 288px;
 }
 
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
     .sprite-hero-288-Vox_Portrait, .sprite-hero-288-Varya_Portrait, .sprite-hero-288-Taka_Portrait, .sprite-hero-288-Skye_Portrait, .sprite-hero-288-Skaarf_Portrait, .sprite-hero-288-Samuel_Portrait, .sprite-hero-288-SAW_Portrait, .sprite-hero-288-Rona_Portrait, .sprite-hero-288-Ringo_Portrait, .sprite-hero-288-Reza_Portrait, .sprite-hero-288-Reim_Portrait, .sprite-hero-288-Phinn_Portrait, .sprite-hero-288-Petal_Portrait, .sprite-hero-288-Ozo_Portrait, .sprite-hero-288-Lyra_Portrait, .sprite-hero-288-Lorelai_Portrait, .sprite-hero-288-Lance_Portrait, .sprite-hero-288-Krul_Portrait, .sprite-hero-288-Koshka_Portrait, .sprite-hero-288-Kestrel_Portrait, .sprite-hero-288-Joule_Portrait, .sprite-hero-288-Idris_Portrait, .sprite-hero-288-Gwen_Portrait, .sprite-hero-288-Grumpjaw_Portrait, .sprite-hero-288-Grace_Portrait, .sprite-hero-288-Glaive_Portrait, .sprite-hero-288-Fortress_Portrait, .sprite-hero-288-Flicker_Portrait, .sprite-hero-288-Churnwalker_Portrait, .sprite-hero-288-Celeste_Portrait, .sprite-hero-288-Catherine_Portrait, .sprite-hero-288-Blackfeather_Portrait, .sprite-hero-288-Baron_Portrait, .sprite-hero-288-Baptiste_Portrait, .sprite-hero-288-Ardan_Portrait, .sprite-hero-288-Alpha_Portrait, .sprite-hero-288-Adagio_Portrait {
         background-image: url('hero-288.png');
-        -webkit-background-size: 2030px 1740px;
-        -moz-background-size: 2030px 1740px;
-        background-size: 2030px 1740px;
+        -webkit-background-size: 2016px 1728px;
+        -moz-background-size: 2016px 1728px;
+        background-size: 2016px 1728px;
     }
 }

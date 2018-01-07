@@ -6,81 +6,105 @@
 
 
 {% block content %}
-<div class="content-wrapper" style="margin: 10px auto; width: fit-content; background: #fff;">
+<div class="matches-main">
 
-  <form class="" action="{{ url_for('vain.matches') }}" method="post">
-    <input name="ign" type="text" />
-    <select name="reg">
-      <option value="ea">東アジア</option>
-      <option value="cn">中国</option>
-      <option value="na">北アメリカ</option>
-      <option value="eu">ヨーロッパ</option>
-      <option value="sa">南アメリカ</option>
-      <option value="sg">東南アジア</option>
-    </select>
-    <input type="submit" value="Submit">
-  </form>
+  <div class="search-form">
+    <form class="" action="{{ url_for('vain.matches') }}" method="post">
+      <input name="ign" type="text" />
+      <select name="reg">
+        <option value="ea">東アジア</option>
+        <option value="cn">中国</option>
+        <option value="na">北アメリカ</option>
+        <option value="eu">ヨーロッパ</option>
+        <option value="sa">南アメリカ</option>
+        <option value="sg">東南アジア</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 
-{% if matches.errors %} <p>Error: {{ matches.errors }}</p>
-{% else %}
 
-<!-- Matches data -->
-{{ player_id }}
+  <div class="all-matches">
+    {% if matches.errors %} <p>Error: {{ matches.errors }}</p>
+    {% else %}
 
-{% for m in matches %}
-{% set p = this_player(m, player_id) %}
-  <div class="single-match" style="display: table;">
-    <h3>
-      {{ m.mode }}
-      {{ p.won }}
-    </h3>
+    <!-- Matches data -->
+    {{ player_id }}
 
-    <div class="m-summary" style="display: table-cell; float: left; margin-right: 20px;">
-      <div class="won" style="background-color: {{ '#ffce2d' if p.won else '#888888' }}; width: 20px; height: 222px; float: left;"></div>
-      {# <i class="sprite-hero-288-{{ p.actor.replace('*', '') }}_Portrait"></i> #}
-      <img src="/static/vain/hero/{{ p.actor.replace('*', '') }}_Portrait.png" style="height: 222px;">
-    </div>
+    {% for m in matches %}
+    {% set p = this_player(m, player_id) %}
+    <div class="single-match">
 
-    <div class="m-details" style="display: table-cell; float: left;">
-      <div class="item-build" style="display: table; margin: 10px;">
-        {% for i in p['items'] %}
-        <div class="singleitem" style="display: table-cell">
-          <i class="sprite-items-64-{{ itemname_to_cssreadable(i) }}"></i>
+      <div class="m-summary">
+        <div class="role">
+          <div class="won" style="background-color: {{ '#ffce2d' if p.won else '#888888' }};">
+            <img class="hero" src="/static/vain/hero/{{ p.actor.replace('*', '') }}_Portrait.png">
+          </div>
         </div>
-        {% endfor %}
       </div>
-      <p style="float: left;">
-        <i class="icon-gold"></i>{{ p.gold }}<br>
-        <i class="icon-cs"></i>{{ p.farm }}<br>
-        <!-- KDA http://vainglory.pchw.io/entry/2016/02/29/092408 -->
-        <i class="icon-kills"></i>KDA: {{ p.kda | round(2) }}<br>
-        ({{ p.kills }}/{{ p.deaths }}/{{ p.assists }})<br>
-        <i class="icon-duration"></i>{{ m.duration }}
-      </p>
-      <div class="whole-match" style="float: right;">
-        {% for r in m.rosters %}
-        <div class="roster {{ r.side }}" style="color: {{ r.side.split('-')[1] }}; float: left; margin-right: 10px;">
-          <i class="icon-kills"></i>{{ r.team_kill_score }}
-          <i class="icon-turrets"></i>{{ r.turret_kill }}
 
-          <div class="roster-participants">
-            {% for p in r.participants %}
-            <i class="sprite-hero-32-{{ p.actor.replace('*', '') }}_Portrait"></i>
+      <div class="m-details">
+        <div class="item-build-wrapper">
+          <div class="item-build">
+            {% for i in p['items'] %}
+            <div class="single-item">
+              <img src="/static/vain/items/{{ itemname_to_cssreadable(i) }}.png">
+            </div>
             {% endfor %}
           </div>
         </div>
-        {% endfor %}
-      </div>
-    </div>
 
+        <div class="player-stats">
+          <div class="mode-won">
+            <dt>{{ m.mode }}</dt>
+            <dd>{{ p.won }}</dd>
+          </div>
+          <div class="kda">
+            <dt>KDA:</dt>
+            <dd>
+            <!-- KDA http://vainglory.pchw.io/entry/2016/02/29/092408 -->
+            <i class="icon-kills"></i>{{ p.kda | round(2) }}
+            ({{ p.kills }}/{{ p.deaths }}/{{ p.assists }})</dd>
+          </div>
+          <div class="gold">
+            <dt>Gold:</dt>
+            <dd><i class="icon-gold"></i>{{ p.gold }}</dd>
+          </div>
+          <div class="cs">
+            <dt>CS:</dt>
+            <dd><i class="icon-cs"></i>{{ p.farm }}</dd>
+          </div>
+          {# <i class="icon-duration"></i>{{ m.duration }} #}
+        </div>
+
+        <div class="rosters">
+          {% for r in m.rosters %}
+          <div class="roster {{ r.side }}" style="color: {{ r.side.split('-')[1] }};">
+            <div class="roster-stats">
+              <p>
+              <i class="icon-kills"></i>{{ r.team_kill_score }}
+              <i class="icon-turrets"></i>{{ r.turret_kill }}
+              </p>
+            </div>
+
+            <div class="roster-participants">
+              {% for p in r.participants %}
+              <i class="sprite-hero-32-{{ p.actor.replace('*', '') }}_Portrait"></i>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+    {% endfor %}
   </div>
-{% endfor %}
 </div>
 
 {% endif %}
 <link href="/static/vain/sprite/items-64.css" rel="stylesheet">
-<link href="/static/vain/sprite/hero-288.css" rel="stylesheet">
 <link href="/static/vain/sprite/hero-32.css" rel="stylesheet">
-<link href="/static/vain/glyphter-font/css/Glyphter.css" rel="stylesheet">
 <link href="/static/vain/style.css" rel="stylesheet">
+<link href="/static/vain/glyphter-font/css/Glyphter.css" rel="stylesheet">
 {% endblock %}
