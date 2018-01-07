@@ -4,7 +4,7 @@ import requests
 class VainAPI:
     ''' vainglory api '''
     def __init__(self):
-        with open('secrets/vain-api-form', 'r') as f:
+        with open('secrets/vain-api', 'r') as f:
             self.apikey = f.read().rstrip()
 
     def request(self, url, params):
