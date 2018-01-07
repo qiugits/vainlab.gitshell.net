@@ -30,7 +30,7 @@ body {
     background: #fff;
     border-radius: 8px;
     max-width: 780px;
-    margin: 4px 8px;
+    margin: 4px 8px 0; /* top side bott */
 }
 .m-summary {
     display: flex;
@@ -40,14 +40,7 @@ body {
     margin: 4px;
 }
 /*
-.role {
-    background-color: purple;
-
-    height: 128px;
-    width: 128px;
-    border-radius: 64px;
-    border-bottom-right-radius: 10px;
-}
+.role {}
 */
 .won {
     /* background-color is defined in html */
@@ -141,6 +134,40 @@ img.hero {
 /* All above are widest mode settings
  * Here we set for shallower cases
  */
+@media all and (max-width: 460px) {
+    .m-summary {
+        margin: 2px;
+    }
+    .won {
+        height: 88px;
+        width: 88px;
+        border-radius: 50%;
+        border-bottom-right-radius: 12.5%;
+    }
+    img.hero {
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .item-build-wrapper {
+        flex: 0 1 242px;
+
+        margin-top: 4px;
+    }
+    .item-build {
+        width: 242px;
+        height: 38+2+2px;
+
+        padding: 1px;
+    }
+    .single-item {
+        margin: 1px;
+    }
+    .single-item img {
+        width: 38px;
+        height: 38px;
+    }
+}
 @media all and (max-width: 630px) {
     .player-stats {
         flex-direction: row;
