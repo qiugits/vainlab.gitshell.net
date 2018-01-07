@@ -11,9 +11,11 @@ app = Flask(__name__)
 # Development stage
 if if_is_development():
     mods = [sbi.mod, vain.mod, beta.mod, ]
+    app.config['SERVER_NAME'] = 'localhost:5000'
 # Production stage
 else:
     mods = [sbi.mod, _vainlab.mod, ]
+    app.config['SERVER_NAME'] = 'gitshell.net:4430'
 # Deploy blueprints
 for m in mods:
     app.register_blueprint(m)
