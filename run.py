@@ -15,7 +15,7 @@ if if_is_development():
 # Production stage
 else:
     mods = [sbi.mod, vain.mod, ]
-    app.config['SERVER_NAME'] = 'gitshell.net:4430'
+    app.config['SERVER_NAME'] = 'gitshell.net'
 # Deploy blueprints
 for m in mods:
     app.register_blueprint(m)
