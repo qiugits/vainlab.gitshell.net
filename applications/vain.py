@@ -2,13 +2,13 @@ from flask import Blueprint, render_template, request, redirect, url_for
 from mymetrics.vain_api import VainAPI, itemname_to_cssreadable, \
     particularplayer_from_singlematch
 
-mod = Blueprint('vain', __name__, url_prefix='/vain')
-# mod = Blueprint('vain', __name__, subdomain='vainlab')
+# mod = Blueprint('vain', __name__, url_prefix='/vain')
+mod = Blueprint('vain', __name__, subdomain='vainlab')
 
 
 @mod.route('/')
 def index():
-    pass
+    return render_template('vain/index.html')
 
 
 @mod.route('/singleplayer/', methods=['POST', 'GET'])
@@ -50,6 +50,7 @@ def matches(reg=None, ign=None):
             player_id = VainAPI().single_player(reg, ign).get('id', '')
         else:
             matches = {'rslt': 'Lacks reg and ign'}
+            player_id = ''
         return render_template('vain/matches.html',
                                matches=matches, player_id=player_id,
                                itemname_to_cssreadable=itemname_to_cssreadable,
@@ -58,11 +59,6 @@ def matches(reg=None, ign=None):
         reg = request.form['reg']
         ign = request.form['ign']
         return redirect(url_for('vain.matches') + f'{reg}/{ign}/')
-
-
-@mod.route('/sprite/')
-def sprite_demo():
-    return render_template('vain/sprite_demo.html')
 
 
 @mod.route('/static_matches/')

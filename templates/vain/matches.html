@@ -38,7 +38,8 @@
       <div class="m-summary">
         <div class="role">
           <div class="won" style="background-color: {{ '#ffce2d' if p.won else '#888888' }};">
-            <img class="hero" src="/static/vain/hero/{{ p.actor.replace('*', '') }}_Portrait.png">
+            {% set actor = p.actor.replace('*', '') %}
+            <img class="hero" src="{{ url_for('static', filename='vain/hero/' + actor + '_Portrait.png') }}">
           </div>
         </div>
       </div>
@@ -48,7 +49,8 @@
           <div class="item-build">
             {% for i in p['items'] %}
             <div class="single-item">
-              <img src="/static/vain/items/{{ itemname_to_cssreadable(i) }}.png">
+              {% set iname = itemname_to_cssreadable(i) %}
+              <img src="{{ url_for('static', filename='vain/items/' + iname + '.png') }}">
             </div>
             {% endfor %}
           </div>
@@ -103,8 +105,7 @@
 </div>
 
 {% endif %}
-<link href="/static/vain/sprite/items-64.css" rel="stylesheet">
-<link href="/static/vain/sprite/hero-32.css" rel="stylesheet">
-<link href="/static/vain/style.css" rel="stylesheet">
-<link href="/static/vain/glyphter-font/css/Glyphter.css" rel="stylesheet">
+<link href="{{ url_for('static', filename='vain/sprite/hero-32.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vain/style.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='vain/glyphter-font/css/Glyphter.css') }}" rel="stylesheet">
 {% endblock %}

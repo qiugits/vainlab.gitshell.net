@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, send_file  # noqa
-from applications import sbi, vain, beta, _vainlab
+from applications import sbi, vain  # noqa
 from mymetrics.analytics import track_event
 from mymetrics.environment import if_is_development
 # デバッグをしたい場合
@@ -10,11 +10,11 @@ app = Flask(__name__)
 # Blueprints to use depending on environment (dev or prod)
 # Development stage
 if if_is_development():
-    mods = [sbi.mod, vain.mod, beta.mod, ]
+    mods = [sbi.mod, vain.mod, ]
     app.config['SERVER_NAME'] = 'localhost:5000'
 # Production stage
 else:
-    mods = [sbi.mod, _vainlab.mod, ]
+    mods = [sbi.mod, vain.mod, ]
     app.config['SERVER_NAME'] = 'gitshell.net:4430'
 # Deploy blueprints
 for m in mods:
