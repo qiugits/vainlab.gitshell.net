@@ -7,14 +7,60 @@ body {
     background: #ddd;
 }
 
+
+.vainlab-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  height: 100vh;
+}
+.vainlab-logo {
+  flex: 1 1 auto;
+}
+.vainlab-logo img {
+  width: 300px;
+  height: 300px;
+  margin: 20px 0px 16px;
+}
+.vainlab-container .search-form {
+  flex: 1 1 auto;
+}
+.vainlab-description {
+  flex: 1 1 auto;
+  margin-top: 16px;
+}
+.vainlab-description p {
+  text-align: center;
+  background-color: #fff;
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .matches-main {
     display: flex;
     flex-direction: column;
 }
-.search-form {
+.matches-main .header {
     background: #fff;
-    flex: 0 0;
-    text-align: center;
+    flex: 0 0 auto;
+
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.matches-main .header img {
+    width: 32px;
+    height: 32px;
 }
 .all-matches {
     display: flex;
@@ -34,8 +80,6 @@ body {
 }
 .m-summary {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 
     margin: 4px;
 }

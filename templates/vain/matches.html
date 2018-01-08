@@ -8,19 +8,24 @@
 {% block content %}
 <div class="matches-main">
 
-  <div class="search-form">
-    <form class="" action="{{ url_for('vain.matches') }}" method="post">
-      <input name="ign" type="text" />
-      <select name="reg">
-        <option value="ea">東アジア</option>
-        <option value="cn">中国</option>
-        <option value="na">北アメリカ</option>
-        <option value="eu">ヨーロッパ</option>
-        <option value="sa">南アメリカ</option>
-        <option value="sg">東南アジア</option>
-      </select>
-      <input type="submit" value="Submit">
-    </form>
+  <div class="header">
+    <a href="{{ url_for('vain.index') }}">
+      <img src="{{ url_for('static', filename='vain/vainlab-logo_pink.svg') }}">
+    </a>
+    <div class="search-form">
+      <form class="" action="{{ url_for('vain.matches') }}" method="post">
+        <input name="ign" type="text" />
+        <select name="reg">
+          <option value="ea">東アジア</option>
+          <option value="cn">中国</option>
+          <option value="na">北アメリカ</option>
+          <option value="eu">ヨーロッパ</option>
+          <option value="sa">南アメリカ</option>
+          <option value="sg">東南アジア</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 
 
