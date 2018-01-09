@@ -16,7 +16,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {% block titlename %}<title>No title</title>{% endblock %}
+    {% block title_description %}
+    <title>No title</title>
+    <meta name="description" content="web page for gitshell.net">
+    {% endblock %}
 
     {% block minorstylesheet %}{% endblock %}
     <!-- Bootstrap -->
@@ -25,6 +28,7 @@
     <!-- Font Awesome (for icons) -->
     <!-- https://fontawesome.com/icons?d=gallery -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    {% block custom_css %}{% endblock %}
   </head>
   <body>
     {% block content %}

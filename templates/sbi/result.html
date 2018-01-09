@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
 
-{% block minorstylesheet %}
+{% block title_description %}
+<title>SBI History Analyzer | SBI証券取引履歴の分析援助ツール</title>
+<meta name="description" content="SBI証券の取引履歴をオンライン分析、またはデータ分析用に整形してダウンロードするツール">
+{% endblock %}
+
+{% block custom_css %}
   <link
   href="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.css"
   rel="stylesheet" type="text/css">
@@ -15,21 +20,18 @@
 
 {% block content %}
 <!-- Custom styles -->
-<link href="/static/css/cover.css" rel="stylesheet">
-<link href="/static/css/mystyle.css" rel="stylesheet">
-
 <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
       <div class="inner cover">
-  
-  {{ rr_table | safe }}
-  {{ bk_div | safe }}
-  {{ bk_script | safe }}
 
-  <script src="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.js"></script>
-  <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.js"></script>
-  <script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.js"></script>
+        {{ rr_table | safe }}
+        {{ bk_div | safe }}
+        {{ bk_script | safe }}
+
+        <script src="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.js"></script>
+        <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.js"></script>
+        <script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.js"></script>
 
       </div>
     </div>

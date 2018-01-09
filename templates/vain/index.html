@@ -1,6 +1,14 @@
 {% extends "layout.html" %}
 
-{% block titlename %}<title>VainLab</title>{% endblock %}
+{% block title_description %}
+<title>VainLab | Vainglory ゲーム履歴を表示・分析・共有しよう</title>
+<meta name="description" content="VainLab 【ベインラボ】 Vainglory API を用いた分析ツールで、ゲーム履歴を表示・共有したり、統計分析で勝率アップを目指そう！">
+{% endblock %}
+
+{% block custom_css %}
+<link href="{{ url_for('static', filename='vain/style.css') }}" rel="stylesheet">
+{% endblock %}
+
 
 {% block content %}
 <div class="vainlab-container">
@@ -24,6 +32,12 @@
     </form>
   </div>
 
+  <div class="useful-links">
+    <a href="http://gamelocker.unite.gg" target="_blunk">
+      API稼働状況
+    </a>
+  </div>
+
   <div class="vainlab-description">
     <p><span>
     <strong>β版</strong><br>
@@ -45,5 +59,4 @@
   </div>
 </div>
 
-<link href="{{ url_for('static', filename='vain/style.css') }}" rel="stylesheet">
 {% endblock %}
