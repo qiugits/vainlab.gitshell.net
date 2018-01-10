@@ -1,5 +1,7 @@
 import requests
 
+SHARDS = ['ea', 'na', 'sg', 'eu', 'sa', 'cn']
+
 
 class VainAPI:
     ''' vainglory api '''
@@ -41,12 +43,11 @@ class VainAPI:
             }
         return wrapped
 
-    def matches(self, reg, ign, mode='ranked'):
+    def matches(self, reg, ign):
         url = f'https://api.dc01.gamelockerapp.com/shards/{reg}/matches'
         params = {
             'filter[playerNames]': [ign],
-            'sort': 'createdAt',
-            'filter[gameMode]': mode,
+            'sort': '-createdAt',
         }
         res = self.request(url, params)
 
@@ -114,6 +115,24 @@ class VainAPI:
             #                          if k in [i for r in m['rosters']
             #                                   for i in r['participants']]}
         return matches
+
+    def _request_without_region(self, ign, method):
+        for r in SHARDS:
+            res = method(r, ign)
+            if res is not dict:
+                break
+            elif res.get('errors', ''):
+                # もしエラーがあれば。
+                continue
+            else:
+                break
+        return res
+
+    def single_player_without_region(self, ign):
+        return self._request_without_region(ign, self.single_player)
+
+    def matches_without_region(self, ign):
+        return self._request_without_region(ign, self.matches)
 
 
 # ================

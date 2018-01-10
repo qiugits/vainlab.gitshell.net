@@ -61,6 +61,25 @@ def matches(reg=None, ign=None):
         return redirect(url_for('vain.matches') + f'{reg}/{ign}/')
 
 
+@mod.route('/player/', methods=['POST', 'GET'])
+@mod.route('/player/<ign>/', methods=['POST', 'GET'])
+def player(ign=None):
+    if request.method == 'GET':
+        if ign:
+            matches = VainAPI().matches_without_region(ign)
+            player_id = VainAPI().single_player_without_region(ign).get('id', '')
+        else:
+            matches = {'errors': 'Lacks reg and ign'}
+            player_id = ''
+        return render_template('vain/matches.html',
+                               matches=matches, player_id=player_id,
+                               itemname_to_cssreadable=itemname_to_cssreadable,
+                               this_player=particularplayer_from_singlematch)
+    else:
+        ign = request.form['ign']
+        return redirect(url_for('vain.player') + f'{ign}/')
+
+
 @mod.route('/static_matches/')
 def static():
     return render_template('vain/static_matches.html')

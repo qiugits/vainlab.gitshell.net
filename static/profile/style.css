@@ -1,0 +1,101 @@
+html,
+body {
+  height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #00BEFF;
+}
+
+#profile-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+#profile-menu {
+    height: 100%;
+    flex: 3 3 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    background: linear-gradient(90deg, #fafafa, #efefef);
+}
+#profile-main {
+    flex: 5 5 500px;
+    box-shadow: -4px 0 8px 0 rgba(0,0,0,0.05);
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+}
+.profile-items {
+    max-width: 500px;
+}
+
+.menu-items {
+    font-size: large;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 4px;
+    padding-right: 10px;
+}
+.menu-items:focus {
+    /* disable Chrome outline after click */
+    outline: none;
+}
+.menu-items.active {
+    box-shadow: -6px 0 0 0 rgba(125, 222, 255, 0.5) inset;
+}
+.menu-items.idle {
+    background: inherit;
+}
+
+.hidden {
+    display: none;
+}
+.shown {
+    display: inline;
+}
+
+
+@media  all and (max-width: 430px) {
+    #profile-container {
+        flex-direction: column;
+    }
+    #profile-menu {
+        flex: 0 0 40px;
+
+        flex-direction: row;
+        justify-content: flex-start;
+        background: linear-gradient(#fafafa, #efefef);
+    }
+    .menu-items {
+        text-align: unset;
+        flex: 0 0 96px;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 0 8px 8px;
+    }
+    .menu-items.active {
+        box-shadow: 0 -6px 0 0 rgba(125, 222, 255, 0.5) inset;
+    }
+    #profile-main {
+        flex: 1 0 auto;
+        box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.05);
+        padding: 0 12px;
+    }

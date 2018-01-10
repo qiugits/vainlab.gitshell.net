@@ -5,30 +5,56 @@
 <meta name="description" content="Welcome to my webpage. About me: Qiu (Qiushi | Qiuqiu) Find my contents and more!">
 {% endblock %}
 
+{% block custom_css %}
+<!-- daneden/animate.css https://daneden.github.io/animate.css/ -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+<!-- my styles -->
+<link href="{{ url_for('static', filename='profile/style.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='common.css') }}" rel="stylesheet">
+{% endblock %}
+
+
 {% block content %}
-<div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+<div id="profile-container">
 
-<main role="main" class="inner cover">
-  <h3>About</h3>
-  <p>
-    Creator: Qiu
-  <p>
-    My interest: Machine Learning, Deep Learning, Brain<br>Hobby: Anime, Manga, Movie
-  <p>
-    {% macro account(name, url) %}
-    <a href={{ url }} target="_blank">{{ name }}</a>
-    {% endmacro %}
+  <div id="profile-menu">
+    <button onclick="show('About');toggle('AboutButton')" id="AboutButton" class="menu-items active">About</button>
+    <button onclick="show('Projects');toggle('ProjectsButton')" id="ProjectsButton" class="menu-items idle">Projects</button>
+  </div>
 
-    / {{ account('Qiita', 'https://qiita.com/qiugits') }}
-    / {{ account('GitHub', 'https://github.com/qiugits') }}
-    /
-</main>
+  <div id="profile-main">
+    <div id="About" class="profile-items shown">
+      <h3>About</h3>
+      <p>
+      Creator: Qiu
+      <p>
+      My interest: Machine Learning, Deep Learning, Brain<br>Hobby: Anime, Manga, Movie
+      <p>
+      {% macro account(name, url) %}
+      <a href={{ url }} target="_blank">{{ name }}</a>
+      {% endmacro %}
+
+      / {{ account('Qiita', 'https://qiita.com/qiugits') }}
+      / {{ account('GitHub', 'https://github.com/qiugits') }}
+      /
+    </div>
+
+    <div id="Projects" class="profile-items hidden">
+      <h3>Projects</h3>
+      <p>
+      My Projects here.
+      </p>
+      <a class="modest-a" href="{{ url_for('vain.index') }}"><section>
+        <h5>VainLab</h5>
+        <p>モバイルゲームVaingloryのゲーム結果をオンラインで閲覧・共有・分析するためのWebアプリ。このサイトの全てを製作しました。</p>
+      </section></a>
+    </div>
+  </div>
 
 </div>
-<style lang="text/css">
-html,
-body {
-  height: 100%;
-}
-</style>
+
+{% endblock %}
+
+{% block custom_js %}
+<script src="{{ url_for('static', filename='profile/script.js') }}" type="text/javascript"></script>
 {% endblock %}

@@ -18,44 +18,37 @@
   </div>
 
   <div class="search-form">
-    <form class="" action="{{ url_for('vain.matches') }}" method="post">
-      <input name="ign" type="text" />
-      <select name="reg">
-        <option value="ea">東アジア</option>
-        <option value="cn">中国</option>
-        <option value="na">北アメリカ</option>
-        <option value="eu">ヨーロッパ</option>
-        <option value="sa">南アメリカ</option>
-        <option value="sg">東南アジア</option>
-      </select>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
-  <div class="useful-links">
+    {% include "vain/search-ign.html" %}
     <a href="http://gamelocker.unite.gg" target="_blunk">
       API稼働状況
     </a>
   </div>
 
+  <div class="useful-links">
+  </div>
+
   <div class="vainlab-description">
     <p><span>
-    <strong>β版</strong><br>
-    VaingloryAPIを用いた<br>
-    統計分析ツール
+      <span class="line-height-larger"><strong>VainLab β版</strong></span><br>
+      VaingloryAPIを用いた<br>
+      統計分析ツール
     </span></p>
 
     <p><span>
-    β版の機能<br>
-    特定プレイヤーの<br>
-    試合結果の一覧表示
+      <span class="line-height-larger">β版の機能</span><br>
+      特定プレイヤーの<br>
+      試合結果の一覧表示
     </span></p>
 
     <p><span>
-    実装予定の機能<br>
-    試合結果全体の<br>
-    統計的分析など
+      <span class="line-height-larger">実装予定の機能</span><br>
+      試合結果全体の<br>
+      統計的分析など
     </span></p>
+  </div>
+
+  <div class="footer">
+    {% include "vain/footer.html" %}
   </div>
 </div>
 
