@@ -6,36 +6,39 @@
 {% endblock %}
 
 {% block custom_css %}
-  <link
-  href="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.css"
-  rel="stylesheet" type="text/css">
-  <link
-  href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.css"
-  rel="stylesheet" type="text/css">
-  <link
-  href="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.css"
-  rel="stylesheet" type="text/css">
+<!-- Bokeh | python package for graph -->
+<link href="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.css" rel="stylesheet" type="text/css">
+
+<link href="{{ url_for('static', filename='sbi/style.css') }}" rel="stylesheet">
 {% endblock %}
 
 
 {% block content %}
-<!-- Custom styles -->
-<div class="site-wrapper">
-  <div class="site-wrapper-inner">
-    <div class="cover-container">
-      <div class="inner cover">
-
-        {{ rr_table | safe }}
-        {{ bk_div | safe }}
-        {{ bk_script | safe }}
-
-        <script src="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.js"></script>
-        <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.js"></script>
-        <script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.js"></script>
-
-      </div>
+<div id="sbi-container">
+  <div id="sbi-main">
+    <p>
+      <a href="{{ url_for('sbi.sbi') }}">＜Back</a>
+    </p>
+    <div title="RiskRewardTable">
+      {{ rr_table | safe }}
     </div>
+    <div title="BokehGraph">
+      {{ bk_div | safe }}
+    </div>
+
+  </div>
+  <div class="footer">
+    {% include "sbi/footer.html" %}
   </div>
 </div>
 {% endblock %}
 
+{% block custom_js %}
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-{{ bk_v }}.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-{{ bk_v }}.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-{{ bk_v }}.min.js"></script>
+{{ bk_script | safe }}
+
+{% endblock %}
