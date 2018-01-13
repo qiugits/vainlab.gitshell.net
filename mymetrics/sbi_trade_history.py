@@ -1,7 +1,7 @@
 # coding: utf-8
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from bokeh.plotting import figure
 from bokeh.embed import components
 from bokeh import __version__ as _bokeh_version
@@ -90,14 +90,14 @@ class SbiAnalyzer:
             ]
         return rr
 
-    def plot_profit_history(self):
-        res = self.df
-        cs_res = np.cumsum(res[['result']].values.T)
-        cs_pro = np.cumsum(res[['profit/loss']].values.T) / 100
-        # print(max(cs_res) - min(cs_res))
-        plt.plot(cs_res)
-        plt.plot(cs_pro)
-        return plt
+    # def plot_profit_history(self):
+    #     res = self.df
+    #     cs_res = np.cumsum(res[['result']].values.T)
+    #     cs_pro = np.cumsum(res[['profit/loss']].values.T) / 100
+    #     # print(max(cs_res) - min(cs_res))
+    #     plt.plot(cs_res)
+    #     plt.plot(cs_pro)
+    #     return plt
 
     def bokeh_plot_history(self):
         res = self.df
