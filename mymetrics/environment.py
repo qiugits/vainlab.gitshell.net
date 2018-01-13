@@ -3,8 +3,7 @@ import os
 
 def if_is_development():
     try:
-        GA_TRACKING_ID = os.environ['GA_TRACKING_ID']
+        env = os.environ['WEB_ENVIRONMENT']
     except:
-        GA_TRACKING_ID = ''
-    env = 'production' if GA_TRACKING_ID else 'development'
+        env = ''
     return True if env == 'development' else False
