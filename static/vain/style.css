@@ -163,6 +163,8 @@ span#player-name {
 }
 .m-summary {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 
     margin: 4px;
 }
@@ -180,6 +182,23 @@ span#player-name {
 img.hero {
     height: 116px;
     border-radius: 50%;
+}
+.mode-won {
+    margin: 2px;
+    display: flex;
+}
+.mw-mode, .mw-won {
+    font-size: xx-small;
+    background: #ccc;
+    color: #fff;
+}
+.mw-mode {
+    padding-left: 4px;
+    border-radius: 8px 0 0 8px;
+}
+.mw-won {
+    padding-right: 4px;
+    border-radius: 0 8px 8px 0;
 }
 .m-details {
     display: flex;

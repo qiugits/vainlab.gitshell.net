@@ -54,6 +54,10 @@
             <img class="hero" src="{{ url_for('static', filename='vain/hero/' + actor + '_Portrait.png') }}">
           </div>
         </div>
+        <div class="mode-won">
+          <span class="mw-mode">{{ m.mode }}</span>
+          <span class="mw-won">{{ ('敗北', '勝利')[p.won] }}</span>
+        </div>
       </div>
 
       <div class="m-details">
@@ -69,10 +73,6 @@
         </div>
 
         <div class="player-stats">
-          <div class="mode-won">
-            <dt>{{ m.mode }}</dt>
-            <dd>{{ p.won }}</dd>
-          </div>
           <div class="kda">
             <dt>KDA:</dt>
             <dd>

@@ -1,6 +1,17 @@
 import requests
 
 SHARDS = ['ea', 'na', 'sg', 'eu', 'sa', 'cn']
+MODE_JA = {
+    'ranked':                       'ランク',
+    'casual':                       'カジュアル',
+    'private':                      'プラベカジュ',
+    'private_party_draft_match':    'プラベドラフト',
+    'private_party_aral_match':     'プラベ大乱闘',
+    'private_party_blitz_match':    'プラベ電撃',
+    'casual_aral':                  '大乱闘',
+    'blitz_pvp_ranked':             '電撃',
+    'blitz_rounds_pvp_casual':      'ガチンコ',
+}
 
 
 class VainAPI:
@@ -188,7 +199,7 @@ class VainAPI:
                            'participants': [participants[data['id']] for data in v[4]]}
                        for k, v in _rosters.items()}
             matches = [{'duration': v[0],
-                        'mode': v[1],
+                        'mode': MODE_JA.get(v[1], v[1]),
                         'version': v[2],
                         'rosters': [rosters[r['id']] for r in v[3]],
                         }
