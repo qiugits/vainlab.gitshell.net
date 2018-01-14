@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title_description %}
+<title>Debug</title>
+{% endblock %}
+
+{% block custom_css %}
+<link href="{{ url_for('static', filename='vain/style.css') }}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+<div class="matches-main">
+
+  <div class="header">
+    <a href="{{ url_for('vain.index') }}">
+      <img src="{{ url_for('static', filename='vain/vainlab-logo_pink.svg') }}">
+    </a>
+    <div class="search-form">
+      {% include "vain/search-ign.html" %}
+    </div>
+  </div>
+
+
+  <div class="all-matches">
+    {% for t in range(30) %}
+    <div class="player-info">
+      <div class="player-tier">
+        <img src="{{url_for('static', filename='vain/tiers-cropped/t{}.png'.format(t)) }}">
+      </div>
+      <div class="player-name-stats">
+        <span id="player-name">Qiuqiu</span>
+        <br>ELO: 1690
+        <br>勝利数: 2400
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block custom_js %}
+{% endblock %}

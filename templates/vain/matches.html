@@ -30,7 +30,18 @@
     {% else %}
 
     <!-- Matches data -->
-    {{ player_id }}
+    {% set p = players[player_id] %}
+    <div class="player-info">
+      <div class="player-tier" style="background-image: url( {{ url_for('static', filename='vain/tiers-cropped/t{}.png'.format(p.tier)) }} );">
+        <div class="player-name-stats">
+          <span id="player-name">{{ p.name }}</span>
+          <p>
+          ELO: {{ p.elo | int }}<br>
+          勝利数: {{ p.wins }}
+          </p>
+        </div>
+      </div>
+    </div>
 
     {% for m in matches %}
     {% set p = this_player(m, player_id) %}

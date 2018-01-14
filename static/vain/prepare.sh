@@ -9,9 +9,10 @@ function prepare () {
     rm "sprite/${1}-${2}.css"
     glue "${1}-${2}" sprite --css-template sprite/css-template.css
 }
-prepare items 64
-prepare hero 288
+prepare items 48
+prepare hero 116
 prepare hero 32
+prepare tiers 640
 
 # function e () {
 #     echo "${1}-${2}"

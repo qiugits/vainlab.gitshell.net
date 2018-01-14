@@ -5,8 +5,8 @@
 <meta name="description" content="VainLab 【ベインラボ】 Vainglory API を用いた分析ツールで、ゲーム履歴を表示・共有したり、統計分析で勝率アップを目指そう！">
 {% endblock %}
 
-{% block content %}
 
+{% block content %}
 <p>
   <form class="" action="{{ url_for('vain.single_player') }}" method="post">
     <input name="ign" type="text" />
@@ -22,9 +22,7 @@
   </form>
 </p>
 
-<dl>
-{% for key, val in res.items() %}
-<dt>{{ key }}: <dd>{{ val }}
-{% endfor %}
+{{ players[player_id] }}
+
 
 {% endblock %}
