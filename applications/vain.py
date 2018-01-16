@@ -78,17 +78,23 @@ def player(ign=None):
                 if v['name'] == ign:
                     player_id = k
                     break
+            return render_template(
+                'vain/matches.html',
+                matches=matches, player_id=player_id,
+                players=player_matches['players'],
+                itemname_to_cssreadable=itemname_to_cssreadable,
+                this_player=particularplayer_from_singlematch
+            )
         else:
+            # TODO: 名前渡されなかった場合の例外処理
             matches = {'errors': 'Lacks reg and ign'}
             player_id = ''
-        return render_template('vain/matches.html',
-                               matches=matches, player_id=player_id,
-                               players=player_matches['players'],
-                               itemname_to_cssreadable=itemname_to_cssreadable,
-                               this_player=particularplayer_from_singlematch)
+            return redirect(url_for('vain.index'))
     else:
-        ign = request.form['ign']
-        return redirect(url_for('vain.player') + f'{ign}/')
+        # TODO: ignで例外文字列を渡された時の対処
+        # 現時点で' 'の処理をurlの性質に任せているが、要検討
+        ign = request.form['ign'].strip()
+        return redirect(url_for('vain.player') + f'{ign}')
 
 
 @mod.route('/_debug')
