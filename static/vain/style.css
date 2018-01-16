@@ -209,6 +209,7 @@ img.hero {
 }
 .mw-mode, .mw-won {
     font-size: xx-small;
+    font-weight: bolder;
     background: #bbb;
     color: #fff;
     text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.2);
