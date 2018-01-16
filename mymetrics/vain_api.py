@@ -2,15 +2,16 @@ import requests
 
 SHARDS = ['ea', 'na', 'sg', 'eu', 'sa', 'cn']
 MODE_JA = {
-    'ranked':                       'ランク',
-    'casual':                       'カジュアル',
-    'private':                      'プラベカジュ',
-    'private_party_draft_match':    'プラベドラフト',
-    'private_party_aral_match':     'プラベ大乱闘',
-    'private_party_blitz_match':    'プラベ電撃',
-    'casual_aral':                  '大乱闘',
-    'blitz_pvp_ranked':             '電撃',
-    'blitz_rounds_pvp_casual':      'ガチンコ',
+    'casual':                           'カジュアル',
+    'ranked':                           'ランク',
+    'casual_aral':                      '大乱闘',
+    'blitz_pvp_ranked':                 '電撃',
+    'blitz_rounds_pvp_casual':          'ガチンコ',
+    'private':                          'プラベカジュ',
+    'private_party_draft_match':        'プラベドラフト',
+    'private_party_aral_match':         'プラベ大乱闘',
+    'private_party_blitz_match':        'プラベ電撃',
+    'private_party_blitz_rounds_match': 'プラベガチンコ',
 }
 
 
