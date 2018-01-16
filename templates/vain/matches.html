@@ -1,14 +1,17 @@
 {% extends "layout.html" %}
 
 {% block title_description %}
-<title>VainLab Matches | Vainglory ゲーム履歴を表示・分析・共有しよう</title>
+<title>VainLab {{ players[player_id].name }} | Vainglory ゲーム履歴を表示・分析・共有しよう</title>
+<meta name="apple-mobile-web-app-title" content="VainLab">
 <meta name="description" content="VainLab 【ベインラボ】 Vainglory API を用いた分析ツールで、ゲーム履歴を表示・共有したり、統計分析で勝率アップを目指そう！">
+<!-- favicon & touch-icon -->
+<link rel="icon" href="{{ url_for('static', filename='vain/favicon-64.png') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='vain/apple-touch-icon.png') }}">
 {% endblock %}
 
 {% block custom_css %}
 <link href="{{ url_for('static', filename='vain/style.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='vain/sprite/hero-32.css') }}" rel="stylesheet">
-<link href="{{ url_for('static', filename='vain/glyphter-font/css/Glyphter.css') }}" rel="stylesheet">
 {% endblock %}
 
 
@@ -34,7 +37,7 @@
     <div class="player-info">
       <div class="player-tier" style="background-image: url( {{ url_for('static', filename='vain/tiers-cropped/t{}.png'.format(p.tier)) }} );">
         <div class="player-name-stats">
-          <span id="player-name">{{ p.name }}</span>
+          <h1 id="player-name">{{ p.name }}</h1>
           <p>
           ELO: {{ p.elo | int }}<br>
           勝利数: {{ p.wins }}
@@ -51,7 +54,7 @@
         <div class="role">
           <div class="won" style="background-color: {{ '#ffce2d' if p.won else '#888888' }};">
             {% set actor = p.actor.replace('*', '') %}
-            <img class="hero" src="{{ url_for('static', filename='vain/hero/' + actor + '_Portrait.png') }}">
+            <img class="hero" src="{{ url_for('static', filename='vain/hero-116/' + actor + '_Portrait.png') }}">
           </div>
         </div>
         <div class="mode-won">
@@ -66,7 +69,7 @@
             {% for i in p['items'] %}
             <div class="single-item">
               {% set iname = itemname_to_cssreadable(i) %}
-              <img src="{{ url_for('static', filename='vain/items/' + iname + '.png') }}">
+              <img src="{{ url_for('static', filename='vain/items-48/' + iname + '.png') }}">
             </div>
             {% endfor %}
           </div>
@@ -77,18 +80,18 @@
             <dt>KDA:</dt>
             <dd>
             <!-- KDA http://vainglory.pchw.io/entry/2016/02/29/092408 -->
-            <i class="icon-kills"></i>{{ p.kda | round(2) }}
+            <img class="icon" src="{{ url_for('static', filename='vain/icon/kills.svg') }}">{{ p.kda | round(2) }}
             ({{ p.kills }}/{{ p.deaths }}/{{ p.assists }})</dd>
           </div>
           <div class="gold">
             <dt>Gold:</dt>
-            <dd><i class="icon-gold"></i>{{ p.gold }}</dd>
+            <dd><img class="icon" src="{{ url_for('static', filename='vain/icon/gold.svg') }}">{{ p.gold }}</dd>
           </div>
           <div class="cs">
             <dt>CS:</dt>
-            <dd><i class="icon-cs"></i>{{ p.farm }}</dd>
+            <dd><img class="icon" src="{{ url_for('static', filename='vain/icon/cs.svg') }}">{{ p.farm }}</dd>
           </div>
-          {# <i class="icon-duration"></i>{{ m.duration }} #}
+          {# <img class="icon" src="{{ url_for('static', filename='vain/icon/duration.svg') }}">{{ m.duration }} #}
         </div>
 
         <div class="rosters">
@@ -96,8 +99,8 @@
           <div class="roster {{ r.side }}" style="color: {{ r.side.split('-')[1] }};">
             <div class="roster-stats">
               <p>
-              <i class="icon-kills"></i>{{ r.team_kill_score }}
-              <i class="icon-turrets"></i>{{ r.turret_kill }}
+              <img class="icon" src="{{ url_for('static', filename='vain/icon/kills.svg') }}">{{ r.team_kill_score }}
+              <img class="icon" src="{{ url_for('static', filename='vain/icon/turrets.svg') }}">{{ r.turret_kill }}
               </p>
             </div>
 

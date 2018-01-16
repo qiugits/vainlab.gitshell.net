@@ -2,7 +2,11 @@
 
 {% block title_description %}
 <title>VainLab | Vainglory ゲーム履歴を表示・分析・共有しよう</title>
+<meta name="apple-mobile-web-app-title" content="VainLab">
 <meta name="description" content="VainLab 【ベインラボ】 Vainglory API を用いた分析ツールで、ゲーム履歴を表示・共有したり、統計分析で勝率アップを目指そう！">
+<!-- favicon & touch-icon -->
+<link rel="icon" href="{{ url_for('static', filename='vain/favicon-64.png') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='vain/apple-touch-icon.png') }}">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@VainLab">

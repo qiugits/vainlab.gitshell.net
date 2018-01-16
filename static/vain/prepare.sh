@@ -11,8 +11,8 @@ function prepare () {
 }
 prepare items 48
 prepare hero 116
-prepare hero 32
-prepare tiers 640
+#prepare hero 32
+#prepare tiers 640
 
 # function e () {
 #     echo "${1}-${2}"
