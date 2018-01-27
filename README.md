@@ -20,6 +20,7 @@ show match results.
 ### Vainglory Game Update Notes
 Note: 37 heroes in 2.11
 
+##### [2.12 | ]()
 ##### [2.11 | Dec 4, 2017](https://www.vainglorygame.com/news/update-2-11-varya-notes-become-lightning-incarnate/)
 - new hero **Varya** added
 ##### [2.10 | Nov 7, 2017](https://www.vainglorygame.com/news/update-2-10-lorelai-notes-make-enemies-fish-food/#Items)
