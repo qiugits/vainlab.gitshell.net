@@ -20,6 +20,14 @@ show match results.
 ### Vainglory Game Update Notes
 Note: 37 heroes in 2.11
 
+##### [3.1 | Mar 14, 2018](https://www.vainglorygame.com/news/update-3-1-notes-play-tony-5v5-ranked-draft/)
+- New hero **Tony** added
+- 5V5 ranked mode begins
+##### [3.1 | Mar 7, 2018](https://www.vainglorygame.com/news/update-3-1-hero-item-balance-changes/)
+##### [3.0 | Feb 7, 2018](https://www.vainglorygame.com/news/update-3-0-notes-play-vainglory-5v5-sovereigns-rise-now/)
+- 5V5 arrives
+- New item **Teleport Boots** added only in 5V5
+- New items **Scout Camera** and its relatives added only in 5V5
 ##### [2.12 | Jan 28, 2018](https://www.vainglorygame.com/news/update-2-12-notes-5v5-early-access-skins-system-overhaul/)
 ##### [2.11 | Dec 4, 2017](https://www.vainglorygame.com/news/update-2-11-varya-notes-become-lightning-incarnate/)
 - new hero **Varya** added

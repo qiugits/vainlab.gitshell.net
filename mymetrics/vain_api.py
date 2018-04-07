@@ -188,7 +188,7 @@ class VainAPI:
                                 'kda': (v[2] + v[4]) / (v[3] + 1),
                                 'gold': int(v[5]),
                                 'farm': int(v[6]),
-                                'items': v[7],
+                                'items': v[7].remove('Healing Flask').remove('Vision Totem') if len(v[7]) > 6 and type(v[7]) == type(list()) else v[7],
                                 'tier': v[8],
                                 'won': v[9],
                                 'player_id': v[10]}
