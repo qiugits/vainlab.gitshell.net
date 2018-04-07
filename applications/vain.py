@@ -3,7 +3,8 @@ from mymetrics.vain_api import VainAPI, itemname_to_cssreadable, \
     particularplayer_from_singlematch
 
 # mod = Blueprint('vain', __name__, url_prefix='/vain')
-mod = Blueprint('vain', __name__, subdomain='vainlab')
+# mod = Blueprint('vain', __name__, subdomain='vainlab')
+mod = Blueprint('vain', __name__)
 
 
 @mod.route('/')
