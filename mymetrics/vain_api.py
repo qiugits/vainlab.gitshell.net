@@ -12,11 +12,13 @@ MODE_JA = {
     'private_party_aral_match':         'プラベ大乱闘',
     'private_party_blitz_match':        'プラベ電撃',
     'private_party_blitz_rounds_match': 'プラベガチンコ',
+    '5v5_pvp_casual':                   '5V5カジュ',
 }
 
 
 class VainAPI:
     ''' vainglory api '''
+
     def __init__(self):
         with open('secrets/vain-api', 'r') as f:
             self.apikey = f.read().rstrip()
@@ -188,7 +190,7 @@ class VainAPI:
                                 'kda': (v[2] + v[4]) / (v[3] + 1),
                                 'gold': int(v[5]),
                                 'farm': int(v[6]),
-                                'items': v[7].remove('Healing Flask').remove('Vision Totem') if len(v[7]) > 6 and type(v[7]) == type(list()) else v[7],
+                                'items': v[7][::-1][:6][::-1],
                                 'tier': v[8],
                                 'won': v[9],
                                 'player_id': v[10]}

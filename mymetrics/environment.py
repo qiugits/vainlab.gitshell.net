@@ -1,9 +1,6 @@
 import os
 
 
-def if_is_development():
-    try:
-        env = os.environ['WEB_ENVIRONMENT']
-    except:
-        env = ''
+def when_development():
+    env = os.environ.get('WEB_ENVIRONMENT', '')
     return True if env == 'development' else False

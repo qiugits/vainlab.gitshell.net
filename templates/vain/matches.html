@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 
+
 {% block title_description %}
 <title>VainLab {{ players[player_id].name }} | Vainglory ゲーム履歴を表示・分析・共有しよう</title>
 <meta name="apple-mobile-web-app-title" content="VainLab">
@@ -9,6 +10,7 @@
 <link rel="apple-touch-icon" href="{{ url_for('static', filename='vain/apple-touch-icon.png') }}">
 <link rel="mask-icon" size="any" href="{{ url_for('static', filename='vain/pinned-icon.svg') }}" color="#333">
 {% endblock %}
+
 
 {% block custom_css %}
 <link href="{{ url_for('static', filename='vain/style.css') }}" rel="stylesheet">
@@ -117,6 +119,7 @@
 
     </div>
     {% endfor %}
+    {% endif %}
   </div>
   
   <div class="footer">
@@ -124,5 +127,4 @@
   </div>
 </div>
 
-{% endif %}
 {% endblock %}
