@@ -20,6 +20,10 @@ show match results.
 ### Vainglory Game Update Notes
 Note: 37 heroes in 2.11
 
+##### [3.3 | May 14, 2018](https://www.vainglorygame.com/news/update-3-3-notes-dash-combat-kensei/)
+- New hero **Kensei** added
+- Beta: Voice chat, Joystick
+##### [3.2 | Apr 13, 2018](https://www.vainglorygame.com/news/update-3-2-hero-item-balance-changes/)
 ##### [3.1 | Mar 14, 2018](https://www.vainglorygame.com/news/update-3-1-notes-play-tony-5v5-ranked-draft/)
 - New hero **Tony** added
 - 5V5 ranked mode begins
